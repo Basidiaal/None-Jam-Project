@@ -31,8 +31,8 @@
   ],
   "name":"Sala_1",
   "parent":{
-    "name":"Cenas",
-    "path":"folders/Cenas.yy",
+    "name":"puzzle1",
+    "path":"folders/Cenas/puzzle1.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
