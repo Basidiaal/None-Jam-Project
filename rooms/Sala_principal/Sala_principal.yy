@@ -13,6 +13,7 @@
     {"name":"inst_5D70EA7F","path":"rooms/Sala_principal/Sala_principal.yy",},
     {"name":"inst_236EE67F","path":"rooms/Sala_principal/Sala_principal.yy",},
     {"name":"inst_4DE1180F","path":"rooms/Sala_principal/Sala_principal.yy",},
+    {"name":"inst_2E18F1A1","path":"rooms/Sala_principal/Sala_principal.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -28,6 +29,11 @@
         {"$GMRInstance":"v1","%Name":"inst_236EE67F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_236EE67F","objectId":{"name":"Obj_transition","path":"objects/Obj_transition/Obj_transition.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":256.0,},
         {"$GMRInstance":"v1","%Name":"inst_4DE1180F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4DE1180F","objectId":{"name":"Obj_Sensor","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Sensor","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"propertyId":{"name":"Destino","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"resource":{"name":"Sala_2","path":"rooms/Sala_2/Sala_2.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Sala_2",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Sensor","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"propertyId":{"name":"Destino_x","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"60",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Sensor","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"propertyId":{"name":"Destino_y","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"677",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":928.0,"y":640.0,},
+        {"$GMRInstance":"v1","%Name":"inst_2E18F1A1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2E18F1A1","objectId":{"name":"Obj_Sensor","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Sensor","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"propertyId":{"name":"Destino","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"resource":{"name":"Sala_4","path":"rooms/Sala_4/Sala_4.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Sala_4",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Sensor","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"propertyId":{"name":"Destino_x","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"60",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Sensor","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"propertyId":{"name":"Destino_y","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"677",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1088.0,"y":640.0,},
