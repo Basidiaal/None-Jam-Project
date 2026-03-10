@@ -1,33 +1,39 @@
-/// @description Lógica do 7º Erro e Dicas
+/// @description Checa a vitória e as dicas
 
-// Lógica para clicar no Player (O 7º erro)
-if (global.erros_encontrados == 6) {
-    if (mouse_check_button_pressed(mb_left)) {
-        // Se o rato estiver sobre o jogador
-        if (position_meeting(mouse_x, mouse_y, Obj_player)) {
-            if (!global.erros_clicados[6]) {
-                global.erros_clicados[6] = true;
-                global.erros_encontrados = 7;
-
-               
-                show_message("ANOMALIA DETECTADA: O OBSERVADOR.\nO sistema será reiniciado.");
-
-                // Salva progresso meta e muda de sala
-                room_goto(Sala_principal);
-            }
+// Lógica do Clique no Player (Agora sempre ativa)
+if (mouse_check_button_pressed(mb_left)) {
+    // Se clicar no player e ele ainda não foi marcado como erro
+    if (position_meeting(mouse_x, mouse_y, Obj_player)) {
+        if (!global.erros_clicados[6]) {
+            global.erros_clicados[6] = true;
+            global.erros_encontrados += 1;
+            
+        
+            // Feedback visual opcional aqui
         }
     }
+}
 
-    // Sistema de Dicas Únicas (A cada 2 minutos)
-    if (global.erros_encontrados < 7) {
-        timer_dica++;
-        if (timer_dica >= dica_limite) {
-            if (sequencia_dicas < array_length(mensagens_dica)) {
-                // Mostra a dica e reseta o timer para a próxima
-                show_message(mensagens_dica[sequencia_dicas]);
-                sequencia_dicas++;
-                timer_dica = 0; 
-            }
+// Checa se TODOS os 7 erros foram encontrados (independente da ordem)
+if (global.erros_encontrados == 7) {
+    // Se encontrarmos o objeto porta na sala...
+    if (instance_exists(Obj_porta_saida)) {
+        var _porta = instance_find(Obj_porta_saida, 0);
+        
+        // Se ela ainda estiver trancada, vamos destrancar!
+        if (_porta.trancada) {
+            _porta.trancada = false;
+            _porta.image_index = 1; // Muda o sprite para porta aberta (se tiver)
+            
+            // Feedback sonoro de que algo destrancou
+            show_debug_message("A porta foi destrancada!");
         }
     }
+}
+
+// O sistema de dicas continua o mesmo, 
+// mas você pode ajustar o timer para só contar se o jogador estiver "travado"
+timer_dica++;
+if (timer_dica >= dica_limite) {
+    // ... código das dicas ...
 }

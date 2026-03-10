@@ -11,8 +11,8 @@
   "name":"Obj_interacao",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"puzzle1",
+    "path":"folders/Objetos/puzzle1.yy",
   },
   "parentObjectId":null,
   "persistent":false,

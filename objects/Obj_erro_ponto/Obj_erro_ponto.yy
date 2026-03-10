@@ -8,8 +8,8 @@
   "name":"Obj_erro_ponto",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"puzzle3",
+    "path":"folders/Objetos/puzzle3.yy",
   },
   "parentObjectId":null,
   "persistent":false,

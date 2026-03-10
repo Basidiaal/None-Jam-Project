@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_limpador_ui",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_puzzle_res_control",
+  "eventList":[],
   "managed":true,
-  "name":"obj_limpador_ui",
+  "name":"obj_puzzle_res_control",
   "overriddenProperties":[],
   "parent":{
-    "name":"puzzle1",
-    "path":"folders/Objetos/puzzle1.yy",
+    "name":"puzzle4",
+    "path":"folders/Objetos/puzzle4.yy",
   },
   "parentObjectId":null,
   "persistent":false,

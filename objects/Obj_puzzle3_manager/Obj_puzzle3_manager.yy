@@ -12,8 +12,8 @@
   "name":"Obj_puzzle3_manager",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"puzzle3",
+    "path":"folders/Objetos/puzzle3.yy",
   },
   "parentObjectId":null,
   "persistent":false,

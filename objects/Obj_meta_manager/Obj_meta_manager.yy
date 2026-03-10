@@ -11,8 +11,8 @@
   "name":"Obj_meta_manager",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"puzzle2",
+    "path":"folders/Objetos/puzzle2.yy",
   },
   "parentObjectId":null,
   "persistent":true,
