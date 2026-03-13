@@ -1,4 +1,8 @@
-
+if(!ativo){
+	
+	image_speed = 0;
+	exit;
+}
 
 if(instance_exists(Obj_transition)){
 velh = 0;

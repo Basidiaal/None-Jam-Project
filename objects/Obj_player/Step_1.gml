@@ -1,3 +1,7 @@
+if(!ativo){
+	image_speed = 0;
+	exit;
+}
 if(global.pause)exit;
 //troca de lado
 if(velh != 0) xscale = sign(velh);

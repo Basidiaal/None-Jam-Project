@@ -4,6 +4,8 @@
 var cam = instance_create_layer(x,y,layer,Obj_Camera);
 cam.target = id;
 
+ativo = true;
+
 delay =0;
 
 invincible = false;

@@ -19,6 +19,6 @@ global.exibir_ui = true;
 Obj_interacao.alarm[1] = 420; // Mensagem some em 7 segundos
 
 // 4. "DESATIVA" ESTE OBJETO (Sumiço e Colisão)
-sprite_index = -1;
-mask_index = -1;
+other.sprite_index = -1;
+other.mask_index = -1;
 }

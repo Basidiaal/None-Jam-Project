@@ -1,4 +1,4 @@
-
+if(instance_exists(Obj_documento_view))global.pause = false;
 
  
 
