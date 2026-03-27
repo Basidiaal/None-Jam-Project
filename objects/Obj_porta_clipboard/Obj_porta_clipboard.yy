@@ -3,6 +3,8 @@
   "%Name":"Obj_porta_clipboard",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Obj_porta_clipboard",
@@ -27,7 +29,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"frase_correta","filters":[],"listItems":[],"multiselect":false,"name":"frase_correta","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"o codigo","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"sala_destino","filters":[],"listItems":[],"multiselect":false,"name":"sala_destino","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Sala_6","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"sala_destino","filters":[],"listItems":[],"multiselect":false,"name":"sala_destino","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"Sala_6","path":"rooms/Sala_6/Sala_6.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Sala_6","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"destino_x","filters":[],"listItems":[],"multiselect":false,"name":"destino_x","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"55","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"destino_y","filters":[],"listItems":[],"multiselect":false,"name":"destino_y","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"100","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"aberta","filters":[],"listItems":[],"multiselect":false,"name":"aberta","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},

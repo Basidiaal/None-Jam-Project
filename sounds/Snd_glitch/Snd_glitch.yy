@@ -1,16 +1,16 @@
 {
   "$GMSound":"",
-  "%Name":"musica",
+  "%Name":"Snd_glitch",
   "audioGroupId":{
-    "name":"audiogroup_music",
-    "path":"audiogroups/audiogroup_music",
+    "name":"audiogroup_sound_effects",
+    "path":"audiogroups/audiogroup_sound_effects",
   },
   "bitDepth":1,
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":67.89222,
-  "name":"musica",
+  "duration":1.104,
+  "name":"Snd_glitch",
   "parent":{
     "name":"Sons",
     "path":"folders/Sons.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"musica.mp3",
+  "soundFile":"Snd_glitch.mp3",
   "type":0,
   "volume":1.0,
 }

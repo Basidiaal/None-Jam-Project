@@ -3,6 +3,8 @@
   "%Name":"Obj_porta_real",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Obj_porta_real",
@@ -25,7 +27,11 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"sala_destino","filters":[],"listItems":[],"multiselect":false,"name":"sala_destino","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"Sala_3","path":"rooms/Sala_3/Sala_3.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Sala_3","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"sala_x","filters":[],"listItems":[],"multiselect":false,"name":"sala_x","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"50","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"sala_y","filters":[],"listItems":[],"multiselect":false,"name":"sala_y","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"50","varType":0,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
