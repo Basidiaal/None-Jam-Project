@@ -16,6 +16,10 @@ repeat(abs(velh))
 	velh = 0;
 	break;
 	}
+	if(place_meeting(x + _velh, y, Obj_barreira)){
+	velh = 0;
+	break;
+	}
 	x += _velh;
 	
 }
@@ -24,6 +28,10 @@ repeat(abs(velh))
 repeat(abs(velv)){
 
   if(place_meeting(x, y + _velv,Obj_Block)){
+	  velv = 0;
+	  break;
+  }
+  if(place_meeting(x, y + _velv,Obj_barreira)){
 	  velv = 0;
 	  break;
   }

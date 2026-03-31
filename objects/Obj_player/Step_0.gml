@@ -28,6 +28,7 @@ else{
 }
 
 
+
 //variaveis
 var right,left,jump,attack,dash,defend;
 var chao = place_meeting(x,y + 1,Obj_Block);

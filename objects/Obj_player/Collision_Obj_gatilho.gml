@@ -4,5 +4,5 @@ if (!instance_exists(Obj_player_2)) {
     instance_create_layer(x, y, "Instances", Obj_glitch_split);
     
     // 2. Cria o Player 2 na posição do puzzle dele
-    instance_create_layer(400, 300, "Instances", Obj_player_2);
+    instance_create_layer(11100, 300, "Instances", Obj_player_2);
 }
