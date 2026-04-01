@@ -1,32 +1,20 @@
-// 1. Verifica se o gerenciador existe para não dar erro
 if (!instance_exists(Obj_gerenciador)) exit;
 
 var _gerente = Obj_gerenciador;
 
-// 2. Descobre qual o passo atual (se é o meu ou do meu parceiro)
-var _passo = sou_tela_1 ? _gerente.passo_p1 : _gerente.passo_p2;
-
-// 3. Lógica de exibição baseada nos níveis que você definiu
-if (_passo < 4) {
-    var _cor_alvo = _gerente.sequencia[_passo];
+if (_gerente.exibindo_sequencia) {
+    var _cor_da_vez = _gerente.sequencia[_gerente.indice_exibicao];
 
     switch (_gerente.nivel_atual) {
-        case 1:
-            // P1 vê COR (0-3), P2 vê NOME (4-7)
-            image_index = sou_tela_1 ? _cor_alvo : _cor_alvo + 4;
-            break;
-            
-        case 2:
-            // P1 vê NOME (4-7), P2 vê COR (0-3)
-            image_index = sou_tela_1 ? _cor_alvo + 4 : _cor_alvo;
-            break;
-            
-        case 3:
-            // AMBOS vêm STROOP (8-11)
-            image_index = _cor_alvo + 8;
-            break;
+        case 1: image_index = sou_tela_1 ? _cor_da_vez : _cor_da_vez + 4; break;
+        case 2: image_index = sou_tela_1 ? _cor_da_vez + 4 : _cor_da_vez; break;
+        case 3: image_index = _cor_da_vez + 8; break;
     }
 } else {
-    // Se o player já terminou os 4 dele, mostra um frame de "OK" (ex: frame 12)
+    // Frame 13: Tela em "Standby" ou desligada enquanto ninguém aperta o botão
     image_index = 12; 
+    
+    // Se o player já terminou, mantém o OK (Frame 12) mesmo com a tela desligada
+    if (sou_tela_1 && _gerente.passo_p1 >= 4) image_index = 12;
+    if (!sou_tela_1 && _gerente.passo_p2 >= 4) image_index = 12;
 }

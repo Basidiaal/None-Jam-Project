@@ -10,20 +10,26 @@ function interagir_com_puzzle(_eh_p1) {
 
         if (cor_id == _cor_alvo) {
             // ACERTOU!
-            if (_eh_p1) _gerente.passo_p1 += 1;
+            if (_eh_p1){
+				_gerente.passo_p1 += 1;
+				
+				
+				
+			}
             else _gerente.passo_p2 += 1;
             
             
             // Efeito visual no terminal (opcional)
-            image_index = 1; 
+            //image_index = 1; 
         } else {
             // ERROU! (Punição)
+			
             _gerente.passo_p1 = 0;
             _gerente.passo_p2 = 0;
            
             
             // Faz todas as luzes dos terminais resetarem
-            with(Obj_terminal) image_index = 0;
+           // with(Obj_terminal) //image_index = 0;
         }
     }
 }
