@@ -19,3 +19,13 @@ indice_exibicao = 0;   // Qual posição da sequência a tela mostra agora (0 a 
 tempo_cada_frame = 60; // 1 segundo por cor (ajuste se quiser mais rápido)
 
 
+// ... suas variáveis já existentes (randomize, nivel_atual, etc) ...
+
+// ... suas outras variáveis ...
+
+// Feedback Individual para as Telas
+feedback_p1_tipo = 0;  // 0: nada, 1: V, 2: X
+feedback_p1_timer = 0;
+
+feedback_p2_tipo = 0;  // 0: nada, 1: V, 2: X
+feedback_p2_timer = 0;
