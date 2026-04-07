@@ -19,6 +19,12 @@ indice_exibicao = 0;   // Qual posição da sequência a tela mostra agora (0 a 
 tempo_cada_frame = 60; // 1 segundo por cor (ajuste se quiser mais rápido)
 
 
+// Controle de Intro e Feedback
+intro_mostrada = false; // Indica se o "Fase X" já apareceu neste nível
+exibindo_intro = false;  // Estado visual
+timer_intro = 0;
+tempo_cada_intro = 90;  // 1.5 segundos de anúncio da fase
+
 // ... suas variáveis já existentes (randomize, nivel_atual, etc) ...
 
 // ... suas outras variáveis ...
