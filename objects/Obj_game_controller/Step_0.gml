@@ -6,8 +6,9 @@ var pause;
 pause = keyboard_check_pressed(vk_escape);
  
  if(pause){
-	global.pause = !global.pause;
 	
+	global.pause = !global.pause;
+	 
 }
  /*
  if(keyboard_check(vk_up)){

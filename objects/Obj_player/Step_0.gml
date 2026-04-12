@@ -15,7 +15,16 @@ if(global.pause){
 	exit;
 }
 
-	
+	// Se a tela do cassino estiver aberta, o player NÃO se mexe
+if (instance_exists(Obj_blackjack_controller)) {
+	velh = 0;
+velv = 0;
+	image_speed = 0;
+	sprite_index = Spr_Player_idle;
+    exit; 
+}
+
+// ... aqui continua o seu código normal de andar, pular, etc.
 
 
 //image_speed = 1;

@@ -18,11 +18,17 @@
     {"name":"inst_B8914CF","path":"rooms/Sala_principal/Sala_principal.yy",},
     {"name":"inst_27B90630","path":"rooms/Sala_principal/Sala_principal.yy",},
     {"name":"inst_423586D1","path":"rooms/Sala_principal/Sala_principal.yy",},
+    {"name":"inst_F9F42E9","path":"rooms/Sala_principal/Sala_principal.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Game_controller","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_36E174CA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_36E174CA","objectId":{"name":"Obj_game_controller","path":"objects/Obj_game_controller/Obj_game_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":512.0,},
+        {"$GMRInstance":"v1","%Name":"inst_F9F42E9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_F9F42E9","objectId":{"name":"Obj_Sensor","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Sensor","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"propertyId":{"name":"Destino","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"resource":{"name":"Sala_8","path":"rooms/Sala_8/Sala_8.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Sala_8",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Sensor","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"propertyId":{"name":"Destino_x","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"140",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Sensor","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"propertyId":{"name":"Destino_y","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"100",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":640.0,},
       ],"layers":[],"name":"Game_controller","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"sensores","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_5D70EA7F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D70EA7F","objectId":{"name":"Obj_Sensor","path":"objects/Obj_Sensor/Obj_Sensor.yy",},"properties":[

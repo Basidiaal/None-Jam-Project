@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Scr_init_game",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Scr_init_game",
+  "parent":{
+    "name":"desafio2",
+    "path":"folders/Scripts/desafio2.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,8 +1,11 @@
+
 if(!ativo){
 	image_speed = 0;
 	exit;
 }
 if(global.pause)exit;
+
+
 //sistema de colisão e movimento
 var _velh = sign(velh);
 var _velv = sign(velv);
