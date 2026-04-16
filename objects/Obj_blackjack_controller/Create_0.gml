@@ -49,3 +49,5 @@ pos_fichas_player_y = altura_gui - 100;
 
 timer_dealer = 0;
 atraso_dealer = 45;
+
+

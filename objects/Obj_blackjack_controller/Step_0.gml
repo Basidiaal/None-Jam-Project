@@ -10,6 +10,7 @@ if (keyboard_check_pressed(vk_escape)) {
 
 // 2. LÓGICA DE APOSTAS (Sempre ouve se o estado for apostando)
 if (estado == "apostando") {
+	
     var fps_disp = game_get_speed(gamespeed_fps);
     if (keyboard_check_pressed(ord("1"))) {
         if (fps_disp - 5 >= global.fps_minimo) { aposta_fps = 5; iniciar_partida(); }
