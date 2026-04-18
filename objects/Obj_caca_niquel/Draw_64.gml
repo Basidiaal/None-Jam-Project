@@ -13,15 +13,15 @@ if (aberto) {
     // --- CAMADA DE TRÁS: OS ROLOS ---
     // Desenhamos os ícones antes da moldura para que a moldura esconda as bordas deles
     for (var i = 0; i < 3; i++) {
-        var _rx = _cx - 120 + (i * 120); 
+        var _rx = _cx - 105 + (i * 118); 
         // Desenhamos os ícones (ajustei a escala para 3 para parecerem maiores na tela)
-        draw_sprite_ext(Spr_icones, rolos_pos[i], _rx, _cy - 20, 3, 3, 0, c_white, 1);
+        draw_sprite_ext(Spr_icones, rolos_pos[i], _rx, _cy - 65, 1, 1, 0, c_white, 1);
     }
 
     // --- CAMADA DA FRENTE: A MÁQUINA ---
     // Substituímos o retângulo cinza pelo seu sprite de primeira pessoa
     // Se o seu sprite for pequeno, aumentamos a escala (ex: 4, 4) para cobrir a tela
-    draw_sprite_ext(Spr_maquina_frame, 0, _cx, _cy, 4, 4, 0, c_white, 1);
+    draw_sprite_ext(Spr_maquina_frame, 0, _cx, _cy, 2.3, 2.3, 0, c_white, 1);
 
     // --- CAMADA DE TEXTO (INTERFACE DO TERMINAL) ---
     draw_set_halign(fa_center);

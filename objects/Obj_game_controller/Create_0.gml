@@ -87,6 +87,10 @@ load_controls = function()
 	ini_close();
 	
 }
+// Room Start da Room_Cassino
+global.fichas_atuais = 0;   // Começa liso toda vez que entra
+global.tem_chave_setor = false;
+global.frames_estoque = 0;  // Quantos frames ele comprou
 
 
 global.pause = true;
