@@ -3,9 +3,15 @@ if (ganhou_nesta_sessao) {
     aberto = false;
     global.minigame_ativo = "nenhum";
     estado = "idling";
-    ganhou_nesta_sessao = false; // Reset para a próxima vez que ele encontrar a máquina
+    ganhou_nesta_sessao = false; 
 } else {
-    // Se não ganhou, permite jogar de novo sem fechar o popup
+    // SE PERDEU:
     estado = "idling";
     coluna_ativa = 0;
+    
+    // SOLUÇÃO PROBLEMA 1: Reseta a posição dos rolos visualmente
+    for (var i = 0; i < 3; i++) {
+        rolos_pos[i] = 0; // Faz os rolos voltarem ao ícone inicial
+        rolos_vel[i] = 0; // Garante que estão parados
+    }
 }

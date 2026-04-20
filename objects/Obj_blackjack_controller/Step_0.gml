@@ -1,16 +1,12 @@
 // 1. SAÍDA SEGURA (ESC)
 if (keyboard_check_pressed(vk_escape)) {
-    // 1. Limpa o estado do teclado para que outros objetos 
-    // pensem que nada foi pressionado neste frame.
     io_clear(); 
-
     instance_destroy();
-    exit; // Impede que o código abaixo rode no frame de destruição
+    exit; 
 }
 
-// 2. LÓGICA DE APOSTAS (Sempre ouve se o estado for apostando)
+// 2. LÓGICA DE APOSTAS
 if (estado == "apostando") {
-	
     var fps_disp = game_get_speed(gamespeed_fps);
     if (keyboard_check_pressed(ord("1"))) {
         if (fps_disp - 5 >= global.fps_minimo) { aposta_fps = 5; iniciar_partida(); }
@@ -23,7 +19,6 @@ if (estado == "apostando") {
 }
 
 // 3. TRAVA DE SEGURANÇA PARA ANIMAÇÕES
-// Se as listas não existem (momento da destruição), para o código aqui
 if (!ds_exists(mao_player, ds_type_list) || !ds_exists(mao_dealer, ds_type_list)) exit;
 
 // --- LÓGICA DE ANIMAÇÃO (LERP) ---
@@ -40,7 +35,7 @@ for (var j=0; j<2; j++) {
     }
 }
 
-// 4. CONTINUIDADE DOS ESTADOS (Player Vez, Dealer Vez)
+// 4. CONTINUIDADE DOS ESTADOS
 if (estado == "player_vez") {
     if (keyboard_check_pressed(ord("H"))) {
         var nx = pos_player_x + (ds_list_size(mao_player) * (espacamento_cartas/2));
@@ -71,15 +66,11 @@ if (estado == "dealer_vez") {
     }
 }
 
-// 5. ESPAÇO PARA CONTINUAR OU FINALIZAR
+// 5. ESPAÇO PARA CONTINUAR (AJUSTADO: REMOVIDO SAÍDA AUTOMÁTICA)
 if (estado == "resultado") {
     if (keyboard_check_pressed(vk_space)) {
-        if (global.fichas_atuais >= global.fichas_objetivo) {
-            instance_destroy();
-            exit;
-        }
-
-        // Animação de saída das cartas
+        
+        // As cartas saem da tela para limpar a mesa
         for(var i=0; i<ds_list_size(mao_player); i++) {
             var _c = mao_player[| i];
             if (is_struct(_c)) _c.target_x = -200; 
@@ -89,7 +80,15 @@ if (estado == "resultado") {
             if (is_struct(_c)) _c.target_x = largura_gui + 200;
         }
         
+        // Em vez de destruir, apenas resetamos para uma nova aposta
         estado = "apostando";
         mensagem = "Quanto FPS deseja apostar?";
+        
+        // Opcional: Reembaralhar se o deck estiver acabando
+        if (ds_list_size(deck) < 10) {
+            ds_list_clear(deck);
+            for(var i=0; i<52; i++) ds_list_add(deck, i);
+            ds_list_shuffle(deck);
+        }
     }
 }

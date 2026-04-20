@@ -100,19 +100,22 @@ function atualizar_visual_fichas(valor) {
 }
 function iniciar_partida() {
     var ctrl = Obj_blackjack_controller;
+    
+    // SEGURANÇA: Garante que as listas existem antes de limpar
+    if (!ds_exists(ctrl.mao_player, ds_type_list)) return;
+    
     ds_list_clear(ctrl.mao_player);
     ds_list_clear(ctrl.mao_dealer);
     
-    // --- LÓGICA DE PRÊMIO DINÂMICO ---
+    // --- O RESTO SEGUE IGUAL ---
     if (ctrl.aposta_fps == 10) {
         ctrl.fichas_inimigo_aposta = 25; 
-        ctrl.atraso_dealer = 30;         
+        ctrl.atraso_dealer = 30;          
     } else {
         ctrl.fichas_inimigo_aposta = 10;
         ctrl.atraso_dealer = 45;
     }
 
-    // ATUALIZA AS FICHAS COLORIDAS (Sorteia uma vez ao iniciar)
     atualizar_visual_fichas(ctrl.fichas_inimigo_aposta);
 
     var esp = ctrl.espacamento_cartas;

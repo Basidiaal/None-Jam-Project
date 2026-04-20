@@ -23,6 +23,15 @@ repeat(abs(velh))
 	velh = 0;
 	break;
 	}
+	// VERIFICAÇÃO DA PORTA
+    var _inst_porta = instance_place(x + _velh, y, Obj_porta_cassino);
+    if (_inst_porta != noone) {
+        // SÓ para o player se a porta NÃO estiver aberta
+        if (_inst_porta.aberta == false) {
+            velh = 0;
+            break;
+        }
+    }
 	x += _velh;
 	
 }
@@ -38,6 +47,15 @@ repeat(abs(velv)){
 	  velv = 0;
 	  break;
   }
+ // VERIFICAÇÃO DA PORTA
+    var _inst_porta_v = instance_place(x, y + _velv, Obj_porta_cassino);
+    if (_inst_porta_v != noone) {
+        // SÓ para o player se a porta NÃO estiver aberta
+        if (_inst_porta_v.aberta == false) {
+            velv = 0;
+            break;
+        }
+    }
   y += _velv;
 	
 }

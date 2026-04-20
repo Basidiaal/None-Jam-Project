@@ -10,7 +10,7 @@ if (tipo == "chave" && global.tem_chave_setor) {
 
 // Define o sprite baseado no tipo que você escreveu no Variable Definitions
 if (tipo == "chave") {
-    sprite_index = Spr_chave;
+    sprite_index = Spr_keycard;
    // mask_index = Spr_chave; // Garante que a colisão use essa forma
 } else if (tipo == "fps") {
     sprite_index = Spr_fps;

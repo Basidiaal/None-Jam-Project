@@ -5,7 +5,7 @@ global.blackjack_ativo = false;
 // Este código roda automaticamente no início do jogo
 global.fps_minimo = 5;
 global.fps_padrao = 60;
-global.fichas_atuais = 0;
+global.fichas_atuais = 150;
 global.fichas_objetivo = 100;
 
 global.em_jogo = false;
