@@ -4,8 +4,8 @@ if (estado_mensagem == 1) {
     draw_set_valign(fa_middle);
 	draw_set_font(Fnt_puzzle_portas);
     
-    var _x = display_get_gui_width() / 2;
-    var _y = display_get_gui_height()-650;
+    var _x = display_get_gui_width();
+    var _y = display_get_gui_height();
     
     // Pega o texto da array dinamicamente
     var _texto = mensagens[indice_atual];
@@ -17,7 +17,7 @@ if (estado_mensagem == 1) {
 
     draw_set_alpha(_alpha);
     draw_set_color(c_white);
-    draw_text(_x, _y, _texto);
+    draw_text(_x / 2, _y - 350, _texto);
     draw_set_alpha(1);
 }
 
