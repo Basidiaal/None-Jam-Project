@@ -2,6 +2,7 @@ timer++;
 
 // EXATAMENTE NO MEIO DA TRANSIÇÃO (Frame 20), a gente divide as câmeras
 if (timer == 20) {
+	if(tipo == "ativar"){
     view_enabled = true;
     
     // Configura View 0 (P1)
@@ -22,7 +23,25 @@ if (timer == 20) {
     view_set_camera(0, cam1);
     view_set_camera(1, cam2);
 }
-
+else if (tipo == "desativar") {
+        // --- NOVO CÓDIGO (VOLTAR AO NORMAL) ---
+        view_visible[1] = false;
+        
+        // Reset da View 0 para tela cheia
+        view_set_wport(0, window_get_width());
+        view_set_hport(0, window_get_height());
+        view_set_xport(0, 0);
+        
+        // Ajusta a câmera do P1 para o tamanho original
+        camera_set_view_size(view_camera[0], 640, 360); 
+        
+        // Limpeza (Deletar P2 e Câmeras extras)
+        with(Obj_Camera) {
+            if (target == Obj_player_2 || target == noone) instance_destroy();
+        }
+        if (instance_exists(Obj_player_2)) instance_destroy(Obj_player_2);
+    }
+}
 // Se o tempo acabou, o efeito some
 if (timer >= duracao) {
     instance_destroy();

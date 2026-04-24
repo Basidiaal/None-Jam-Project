@@ -23,6 +23,10 @@ repeat(abs(velh))
 	velh = 0;
 	break;
 	}
+	if(place_meeting(x + _velh, y, Obj_barreira_final)){
+	velh = 0;
+	break;
+	}
 	// VERIFICAÇÃO DA PORTA
     var _inst_porta = instance_place(x + _velh, y, Obj_porta_cassino);
     if (_inst_porta != noone) {
@@ -44,6 +48,10 @@ repeat(abs(velv)){
 	  break;
   }
   if(place_meeting(x, y + _velv,Obj_barreira)){
+	  velv = 0;
+	  break;
+  }
+   if(place_meeting(x, y + _velv,Obj_barreira_final)){
 	  velv = 0;
 	  break;
   }

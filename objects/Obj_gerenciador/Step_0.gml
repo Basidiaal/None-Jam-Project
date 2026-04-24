@@ -44,6 +44,6 @@ if (passo_p1 == 4 && passo_p2 == 4) {
         intro_mostrada = false; // Reset para mostrar a intro da PRÓXIMA fase
         array_shuffle_ext(sequencia);
     } else {
-        puzzle_completo = true;
+        global.puzzle_completo = true;
     }
 }

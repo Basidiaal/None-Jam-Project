@@ -28,7 +28,7 @@ if (_instancia_porta != noone) {
                 ini_open("save_meta.ini");
                 ini_write_real("Status", "restart_feito", 1);
                 ini_close();
-                show_message("ERRO: Reinicialização necessária.");
+                show_message("Dica 1:  a oportunidade é como uma JANELA as vezes a JANELA precisa \nser FECHADA para uma porta ser aberta.");
             }
 
             // Inicia o Fade para a sala externa
