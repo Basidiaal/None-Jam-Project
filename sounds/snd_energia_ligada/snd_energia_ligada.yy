@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_energia_ligada",
+  "audioGroupId":{
+    "name":"audiogroup_sound_effects",
+    "path":"audiogroups/audiogroup_sound_effects",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.528,
+  "name":"snd_energia_ligada",
+  "parent":{
+    "name":"Sons",
+    "path":"folders/Sons.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_energia_ligada.mp3",
+  "type":0,
+  "volume":1.0,
+}

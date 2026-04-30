@@ -21,7 +21,10 @@ if (keyboard_check_pressed(ord("G")) && item_segurando != noone) {
 
     // CRIAÇÃO DO ITEM (Usando depth para evitar sumiço)
     var _novo_item = instance_create_depth(_drop_x, _drop_y, Obj_player.depth + 1, item_segurando.objeto_original);
-    
+    // TOCAR O SOM ESPECÍFICO
+    // Usamos o som que veio da struct
+   var _som = audio_play_sound(item_segurando.som_ao_dropar, 1, false);
+audio_sound_pitch(_som, random_range(0.9, 1.2)); // Varia o tom entre 90% e 120%
     // Devolvemos as variáveis
     _novo_item.nome_exibicao = item_segurando.nome;
     _novo_item.id_item = item_segurando.id_unico;

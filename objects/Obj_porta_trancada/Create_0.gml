@@ -1,4 +1,4 @@
-
+event_inherited()
 
 id_necessario = "chave_porta_trancada";
 consumivel = true;

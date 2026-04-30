@@ -16,6 +16,8 @@ if(global.pause){
 }
 
 
+
+
 	// Se a tela do cassino estiver aberta, o player NÃO se mexe
 if (instance_exists(Obj_blackjack_controller)) {
 	velh = 0;

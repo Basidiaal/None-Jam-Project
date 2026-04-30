@@ -11,8 +11,8 @@
   "name":"Obj_fade",
   "overriddenProperties":[],
   "parent":{
-    "name":"puzzle2",
-    "path":"folders/Objetos/puzzle2.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":null,
   "persistent":true,

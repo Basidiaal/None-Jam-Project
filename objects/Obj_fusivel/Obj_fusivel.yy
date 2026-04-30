@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_caixa_fuzivel",
+  "%Name":"Obj_fusivel",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_caixa_fuzivel",
+  "name":"Obj_fusivel",
   "overriddenProperties":[],
   "parent":{
-    "name":"interagiveis",
-    "path":"folders/Objetos/interagiveis.yy",
+    "name":"itens",
+    "path":"folders/Objetos/itens.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Obj_item_parent",
+    "path":"objects/Obj_item_parent/Obj_item_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Spr_interacao",
+    "path":"sprites/Spr_interacao/Spr_interacao.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

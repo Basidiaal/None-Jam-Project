@@ -1,18 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_interativo_parent",
+  "%Name":"Obj_caixa_fusivel",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_interativo_parent",
+  "name":"Obj_caixa_fusivel",
   "overriddenProperties":[],
   "parent":{
-    "name":"grupo1",
-    "path":"folders/Objetos/grupo1.yy",
+    "name":"interagiveis",
+    "path":"folders/Objetos/interagiveis.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Obj_interativo_parent",
+    "path":"objects/Obj_interativo_parent/Obj_interativo_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Spr_controlador_de_fps",
+    "path":"sprites/Spr_controlador_de_fps/Spr_controlador_de_fps.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

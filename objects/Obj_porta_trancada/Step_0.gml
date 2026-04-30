@@ -1,5 +1,6 @@
+event_inherited()
 // Evento Step do obj_porta_trancada
-if (place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
+if (!instance_exists(Obj_fade) && place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
     
     // CASO A: A porta ainda está trancada
     if (trancada) {
@@ -21,7 +22,8 @@ if (place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
     // CASO B: A porta já está destrancada
     else {
         //audio_play_sound(snd_transicao_sala, 1, false);
-        room_goto(Sala_cozinha); // Leva o player para a próxima sala
+        var _fade = instance_create_depth(0, 0, -9999, Obj_fade);
+    _fade.target_room = sala_destino;
     }
 }
 /*

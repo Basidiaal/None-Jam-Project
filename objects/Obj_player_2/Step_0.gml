@@ -15,7 +15,6 @@ if(global.pause){
 	exit;
 }
 
-	
 
 
 //image_speed = 1;

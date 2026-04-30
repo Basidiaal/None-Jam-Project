@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Snd_drop_padrao",
+  "audioGroupId":{
+    "name":"audiogroup_sound_effects",
+    "path":"audiogroups/audiogroup_sound_effects",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.809796,
+  "name":"Snd_drop_padrao",
+  "parent":{
+    "name":"Sons",
+    "path":"folders/Sons.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Snd_drop_padrao.ogg",
+  "type":0,
+  "volume":1.0,
+}

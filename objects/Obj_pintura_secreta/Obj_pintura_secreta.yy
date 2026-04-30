@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_interativo_parent",
+  "%Name":"Obj_pintura_secreta",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_interativo_parent",
+  "name":"Obj_pintura_secreta",
   "overriddenProperties":[],
   "parent":{
-    "name":"grupo1",
-    "path":"folders/Objetos/grupo1.yy",
+    "name":"itens",
+    "path":"folders/Objetos/itens.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Spr_enable_checkpoint",
+    "path":"sprites/Spr_enable_checkpoint/Spr_enable_checkpoint.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

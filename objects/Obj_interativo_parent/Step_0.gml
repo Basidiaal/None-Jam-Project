@@ -1,6 +1,6 @@
 // No Step do obj_interativo_parent
 // Usamos place_meeting para checar a máscara de colisão exata
-if (place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
+if (!instance_exists(Obj_fade) && place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
     
     var _inv = Obj_inventory;
     
