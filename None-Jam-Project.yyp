@@ -74,7 +74,6 @@
     {"id":{"name":"Obj_Camera","path":"objects/Obj_Camera/Obj_Camera.yy",},},
     {"id":{"name":"Obj_casino_manager","path":"objects/Obj_casino_manager/Obj_casino_manager.yy",},},
     {"id":{"name":"Obj_chave","path":"objects/Obj_chave/Obj_chave.yy",},},
-    {"id":{"name":"Obj_checkpoint","path":"objects/Obj_checkpoint/Obj_checkpoint.yy",},},
     {"id":{"name":"Obj_contador_de_pontos","path":"objects/Obj_contador_de_pontos/Obj_contador_de_pontos.yy",},},
     {"id":{"name":"Obj_controlador_de_fps","path":"objects/Obj_controlador_de_fps/Obj_controlador_de_fps.yy",},},
     {"id":{"name":"Obj_documento_item","path":"objects/Obj_documento_item/Obj_documento_item.yy",},},

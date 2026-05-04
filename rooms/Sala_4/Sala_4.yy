@@ -8,7 +8,6 @@
   "instanceCreationOrder":[
     {"name":"inst_2BCD0FD_2","path":"rooms/Sala_4/Sala_4.yy",},
     {"name":"inst_590C451A_2","path":"rooms/Sala_4/Sala_4.yy",},
-    {"name":"inst_1FC0CA43_2","path":"rooms/Sala_4/Sala_4.yy",},
     {"name":"inst_36E174CA_2","path":"rooms/Sala_4/Sala_4.yy",},
     {"name":"inst_236EE67F_2","path":"rooms/Sala_4/Sala_4.yy",},
     {"name":"inst_280D4691","path":"rooms/Sala_4/Sala_4.yy",},
@@ -28,7 +27,6 @@
       ],"layers":[],"name":"Game_controller","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_2BCD0FD_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2BCD0FD_2","objectId":{"name":"Obj_Block","path":"objects/Obj_Block/Obj_Block.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":21.78125,"scaleY":1.0,"x":0.0,"y":704.0,},
-        {"$GMRInstance":"v1","%Name":"inst_1FC0CA43_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1FC0CA43_2","objectId":{"name":"Obj_checkpoint","path":"objects/Obj_checkpoint/Obj_checkpoint.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":289.0,"y":508.0,},
         {"$GMRInstance":"v1","%Name":"inst_388295B6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_388295B6","objectId":{"name":"Obj_porta_saida","path":"objects/Obj_porta_saida/Obj_porta_saida.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_porta_saida","path":"objects/Obj_porta_saida/Obj_porta_saida.yy",},"propertyId":{"name":"destino_x","path":"objects/Obj_porta_saida/Obj_porta_saida.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"50",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_porta_saida","path":"objects/Obj_porta_saida/Obj_porta_saida.yy",},"propertyId":{"name":"destino_y","path":"objects/Obj_porta_saida/Obj_porta_saida.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"300",},
