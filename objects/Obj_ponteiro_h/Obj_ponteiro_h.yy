@@ -1,17 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_item_final",
+  "%Name":"Obj_ponteiro_h",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_item_final",
+  "name":"Obj_ponteiro_h",
   "overriddenProperties":[],
   "parent":{
-    "name":"desafio1",
-    "path":"folders/Objetos/desafio1.yy",
+    "name":"itens",
+    "path":"folders/Objetos/itens.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Obj_item_parent",
+    "path":"objects/Obj_item_parent/Obj_item_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_interacao",
-    "path":"sprites/Spr_interacao/Spr_interacao.yy",
+    "name":"Spr_ponteiro_h",
+    "path":"sprites/Spr_ponteiro_h/Spr_ponteiro_h.yy",
   },
   "spriteMaskId":null,
   "visible":true,

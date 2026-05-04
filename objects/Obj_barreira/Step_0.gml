@@ -4,6 +4,12 @@ var _obstaculo = place_meeting(x, y + vel_descida, Obj_player) || place_meeting(
 // 2. Definir destino (Sua lógica)
 var _destino = aberta ? y_alvo : y_inicial;
 
+
+// CONDIÇÃO ESPECIAL: Se o puzzle acabou, o destino é SEMPRE o y_alvo (aberta)
+if (global.puzzle_completo) {
+    _destino = y_alvo;
+}
+
 // 3. Definir qual velocidade usar (Sua lógica)
 var _subindo = (y > _destino);
 var _vel_atual = _subindo ? vel_subida : vel_descida;

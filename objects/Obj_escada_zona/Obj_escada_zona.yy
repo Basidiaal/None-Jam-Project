@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_item_final",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Obj_escada_zona",
+  "eventList":[],
   "managed":true,
-  "name":"Obj_item_final",
+  "name":"Obj_escada_zona",
   "overriddenProperties":[],
   "parent":{
-    "name":"desafio1",
-    "path":"folders/Objetos/desafio1.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_interacao",
-    "path":"sprites/Spr_interacao/Spr_interacao.yy",
+    "name":"Spr_enable_checkpoint",
+    "path":"sprites/Spr_enable_checkpoint/Spr_enable_checkpoint.yy",
   },
   "spriteMaskId":null,
   "visible":true,

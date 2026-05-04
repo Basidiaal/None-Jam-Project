@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_porta_saida2",
+  "%Name":"Obj_ponteiro_m",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_porta_saida2",
+  "name":"Obj_ponteiro_m",
   "overriddenProperties":[],
   "parent":{
-    "name":"desafio1",
-    "path":"folders/Objetos/desafio1.yy",
+    "name":"itens",
+    "path":"folders/Objetos/itens.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Obj_item_parent",
+    "path":"objects/Obj_item_parent/Obj_item_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_porta_saida",
-    "path":"sprites/Spr_porta_saida/Spr_porta_saida.yy",
+    "name":"Spr_ponteiro_m",
+    "path":"sprites/Spr_ponteiro_m/Spr_ponteiro_m.yy",
   },
   "spriteMaskId":null,
   "visible":true,
