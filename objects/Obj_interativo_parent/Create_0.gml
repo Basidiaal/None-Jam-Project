@@ -14,3 +14,6 @@ ativado = false;
 // Mantém o sprite parado no primeiro frame (útil para objetos com estados 'fechado/aberto').
 image_speed = 0;
 image_index = 0;
+
+// No Create
+minha_velocidade = image_speed;

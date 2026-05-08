@@ -1,5 +1,7 @@
 // Definido na aba 'Variables' da Room ou aqui:
 //nome_item = "Chave" ou "Restaurar Sistema"
+nome_item = Obj_main_menu.texto_chave[Obj_main_menu.lang_index]
+
 // tipo = "chave" ou "fps"
 // preco = 50 ou 20
 raio_interacao = 70; // Define o tamanho da "aura" de toque
@@ -16,3 +18,4 @@ if (tipo == "chave") {
     sprite_index = Spr_fps;
    // mask_index = Spr_fps;
 }
+

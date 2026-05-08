@@ -17,3 +17,6 @@ if (global.target_x != 0 || global.target_y != 0) {
     global.target_x = 0;
     global.target_y = 0;
 }
+
+
+

@@ -1,3 +1,7 @@
+if (global.pause) {
+
+    exit;
+} 
 // 1. Checa proximidade e clique
 if (place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
     

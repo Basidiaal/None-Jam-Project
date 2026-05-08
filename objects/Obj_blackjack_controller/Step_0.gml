@@ -1,3 +1,7 @@
+if (global.pause) {
+  
+    exit;
+} 
 // 1. SAÍDA SEGURA (ESC)
 if (keyboard_check_pressed(vk_escape)) {
     io_clear(); 
@@ -10,11 +14,11 @@ if (estado == "apostando") {
     var fps_disp = game_get_speed(gamespeed_fps);
     if (keyboard_check_pressed(ord("1"))) {
         if (fps_disp - 5 >= global.fps_minimo) { aposta_fps = 5; iniciar_partida(); }
-        else mensagem = "FPS insuficiente!";
+        else mensagem = Obj_main_menu.texto_fps_insuficiente[Obj_main_menu.lang_index];
     }
     if (keyboard_check_pressed(ord("2"))) {
         if (fps_disp - 10 >= global.fps_minimo) { aposta_fps = 10; iniciar_partida(); }
-        else mensagem = "FPS insuficiente!";
+        else mensagem = Obj_main_menu.texto_fps_insuficiente[Obj_main_menu.lang_index];
     }
 }
 
@@ -61,7 +65,7 @@ if (estado == "dealer_vez") {
         } else {
             if (sp > sd) finalizar_partida(true);
             else if (sp < sd) finalizar_partida(false);
-            else { mensagem = "Empate!"; estado = "resultado"; }
+            else { mensagem = Obj_main_menu.texto_empate[Obj_main_menu.lang_index]; estado = "resultado"; }
         }
     }
 }
@@ -82,7 +86,7 @@ if (estado == "resultado") {
         
         // Em vez de destruir, apenas resetamos para uma nova aposta
         estado = "apostando";
-        mensagem = "Quanto FPS deseja apostar?";
+        mensagem = Obj_main_menu.texto_aposta[Obj_main_menu.lang_index];
         
         // Opcional: Reembaralhar se o deck estiver acabando
         if (ds_list_size(deck) < 10) {

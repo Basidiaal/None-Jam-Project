@@ -1,3 +1,14 @@
+if (global.pause) {
+    image_speed = 0;
+	
+	// Congela todos os alarmes (impede que cheguem a zero)
+    for (var i = 0; i < 12; i++) {
+        if (alarm[i] > 0) alarm[i]++; 
+    }
+    exit;
+} else {
+    image_speed = minha_velocidade; // Retoma a velocidade correta de cada objeto
+}
 var _fps_atual = game_get_speed(gamespeed_fps);
 
 // --- CASO O JOGO ESTEJA FECHADO ---

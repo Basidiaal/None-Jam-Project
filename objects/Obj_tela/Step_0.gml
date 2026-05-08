@@ -1,3 +1,10 @@
+if (global.pause) {
+    image_speed = 0;
+    exit;
+} else {
+    image_speed = minha_velocidade; // Retoma a velocidade correta de cada objeto
+}
+
 if (!instance_exists(Obj_gerenciador)) exit;
 var _gerente = Obj_gerenciador;
 

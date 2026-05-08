@@ -8,7 +8,7 @@ ativo = true;
 
 delay =0;
 
-invincible = false;
+
 max_life = 1;
 current_life = max_life;
 
@@ -62,12 +62,3 @@ dano = noone;
 i_can = true;
 
 game_over_delay = false;
-if(instance_exists(Obj_checkpoint)){
-ini_open("checkpoint");
-Obj_checkpoint.sprite_index = Spr_enable_checkpoint;
-Obj_Camera.x = ini_read_real("Camera","CamX",Obj_Camera.x);
-Obj_Camera.y = ini_read_real("Camera","CamY",Obj_Camera.y);
-x = ini_read_real("Player","PosX",x);
-y = ini_read_real("Player","PosY",y);
-ini_close();
-}

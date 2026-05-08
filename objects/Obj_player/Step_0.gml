@@ -10,9 +10,11 @@ velv = 0;
 sprite_index = Spr_Player_idle;
 	exit;
 }
-if(global.pause){
-	image_speed = 0;
-	exit;
+if (global.pause) {
+    image_speed = 0;
+    exit; // Para o código aqui e não executa o que vem abaixo
+} else {
+    image_speed = 1; // Retoma a animação (ou a velocidade que você usa)
 }
 
 
@@ -30,7 +32,13 @@ velv = 0;
 // ... aqui continua o seu código normal de andar, pular, etc.
 
 
-
+if (frozen) {
+    // Zera as velocidades para ele não "deslizar" se o fade começar no meio de um pulo/corrida
+    velh = 0; 
+    velv = 0;
+    
+    exit; // Interrompe o código aqui, impedindo a leitura das teclas
+}
 
 
 
@@ -51,7 +59,7 @@ jump = keyboard_check(vk_space);
 
 if(current_life <= 0) estado = "death";
 
-if(attack_buff > 0) attack_buff -=1;
+
 
 
 //aplicando gravidade

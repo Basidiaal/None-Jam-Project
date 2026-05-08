@@ -1,5 +1,8 @@
 /// @description Checa a vitória e as dicas
-
+if (global.pause) {
+ 
+    exit; // Para o código aqui e não executa o que vem abaixo
+} 
 // Lógica do Clique no Player (Agora sempre ativa)
 if (mouse_check_button_pressed(mb_left)) {
     // Se clicar no player e ele ainda não foi marcado como erro

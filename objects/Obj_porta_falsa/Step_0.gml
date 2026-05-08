@@ -1,3 +1,7 @@
+if (global.pause) {
+    exit; // Para o código aqui e não executa o que vem abaixo
+}
+
 /// @description Interação com a porta
 // Verifica se o player está perto e apertou a tecla E
 if (place_meeting(x, y, Obj_player)) {

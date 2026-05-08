@@ -4,11 +4,12 @@
 var cam = instance_create_layer(x,y,layer,Obj_Camera);
 cam.target = id;
 
+frozen = false;
+
 ativo = true;
 
 delay =0;
 
-invincible = false;
 max_life = 1;
 current_life = max_life;
 

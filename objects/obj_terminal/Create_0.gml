@@ -1,3 +1,5 @@
+// No Create
+minha_velocidade = image_speed;
 function interagir_com_puzzle(_eh_p1) {
     var _gerente = Obj_gerenciador;
     

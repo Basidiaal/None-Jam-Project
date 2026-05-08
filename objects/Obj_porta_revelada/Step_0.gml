@@ -1,3 +1,10 @@
+if (global.pause) {
+    image_speed = 0;
+    exit;
+} else {
+    image_speed = minha_velocidade; // Retoma a velocidade correta de cada objeto
+}
+
 event_inherited()
 // 1. Primeiro, checamos se a pintura ainda está na frente
 // Se a pintura não existir mais ou já tiver subido, desbloqueamos a porta

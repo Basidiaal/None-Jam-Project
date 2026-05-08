@@ -1,3 +1,10 @@
+if (global.pause) {
+    image_speed = 0;
+    exit;
+} else {
+    image_speed = minha_velocidade; // Retoma a velocidade correta de cada objeto
+}
+
 // 1. Checar se há players embaixo (Sua lógica)
 var _obstaculo = place_meeting(x, y + vel_descida, Obj_player) || place_meeting(x, y + vel_descida, Obj_player_2);
 

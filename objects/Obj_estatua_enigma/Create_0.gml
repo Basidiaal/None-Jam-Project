@@ -15,3 +15,6 @@ velocidade = 1;
 // Variáveis de Áudio Manual
 som_arrastando = noone;
 dist_maxima_som = 400; // Ajuste o alcance do som aqui
+
+// No Create
+minha_velocidade = image_speed;

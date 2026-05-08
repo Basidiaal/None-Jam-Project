@@ -11,3 +11,6 @@ if (file_exists("save_meta.ini")) {
         global.puzzle_stage = 5; // Pula para a porta final única
     }
 }
+
+// No Create
+minha_velocidade = image_speed;

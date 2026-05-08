@@ -1,3 +1,6 @@
+if (global.pause) {
+    exit;
+} 
 if (keyboard_check_pressed(ord("G")) && item_segurando != noone) {
     var _movel = instance_nearest(Obj_player.x, Obj_player.y, Obj_movel_parent);
     var _drop_x = Obj_player.x;

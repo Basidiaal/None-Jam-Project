@@ -1,6 +1,6 @@
 /// @desc Ativar Mecanismo da Pintura
 ativado = true;
-
+image_index = 1;
 
 if (instance_exists(Obj_pintura_secreta)) {
     Obj_pintura_secreta.subir = true; // Manda a pintura subir

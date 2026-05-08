@@ -1,3 +1,9 @@
+if (global.pause) {
+    image_speed = 0;
+    exit;
+} else {
+    image_speed = minha_velocidade; // Retoma a velocidade correta de cada objeto
+}
 // 1. Atualiza o frame de acordo com as partes
 // Lógica binária simples: Cabeça vale 1, Braço vale 2, Perna vale 4
 image_index = (tem_cabeca * 1) + (tem_braco * 2) + (tem_perna * 4);

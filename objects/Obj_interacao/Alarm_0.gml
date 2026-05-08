@@ -1,3 +1,9 @@
+// Dentro do evento Alarm 0
+if (global.pause) {
+    alarm[0] = 1; // Adia o alarme para o próximo frame
+    exit;         // Sai e não executa o código de ataque/interação agora
+}
+
 if (global.caminho_arquivo != "" && file_exists(global.caminho_arquivo)) {
     var file = file_text_open_read(global.caminho_arquivo);
     var sucesso = false;
@@ -21,7 +27,7 @@ if (global.caminho_arquivo != "" && file_exists(global.caminho_arquivo)) {
         file_delete(global.caminho_arquivo);
         
         // 3. Feedback final na UI
-        global.texto_ui = "ACESSO CONCEDIDO! +1 PONTO";
+        global.texto_ui = Obj_main_menu.texto_item_liberado[Obj_main_menu.lang_index];
         global.exibir_ui = true;
         
         // Criamos um objeto temporário só para apagar a mensagem da UI depois, 

@@ -10,25 +10,20 @@ velv = 0;
 sprite_index = Spr_Player_idle;
 	exit;
 }
-if(global.pause){
-	image_speed = 0;
-	exit;
+if (global.pause) {
+    image_speed = 0;
+    exit; // Para o código aqui e não executa o que vem abaixo
+} else {
+    image_speed = 1; // Retoma a animação (ou a velocidade que você usa)
 }
 
 
 
-//image_speed = 1;
-//controlando a minha invencibilidade
-if(invincible && timer_invincible > 0){
-timer_invincible--;
-}
-else{
-	invincible = false;
-}
+
 
 
 //variaveis
-var right,left,jump,attack,dash,defend;
+var right,left,jump;
 var chao = place_meeting(x,y + 1,Obj_Block);
 
 
@@ -41,7 +36,7 @@ jump = keyboard_check(vk_up);
 
 if(current_life <= 0) estado = "death";
 
-if(attack_buff > 0) attack_buff -=1;
+
 
 
 //aplicando gravidade
@@ -149,38 +144,7 @@ switch(estado)
 	
 	
 	
-	case "hit":
-	{
-		if(sprite_index != Spr_Player_hit){
-			
-			sprite_index = Spr_Player_hit;
-			image_index = 0;
-			
-			//deixando invencivel
-			invincible = true;
-			timer_invincible = invincible_timer;
-		}
-		
-		//ficando parado ao levar dano 
-		velh = 0;
-		
-		//saindo do estado
-		
-		//checando se eu devo morrer
-		
-		if(current_life > 0){
-		if(image_index >= image_number-1){
-		   estado = "parado";	
-		}
-		}
-		else{
-		if(image_index >= image_number-1){
-			estado = "death"
-		}
-		}
-		
-	  break;	
-	}
+	
 	
 	case "death":
 	{

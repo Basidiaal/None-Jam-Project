@@ -135,11 +135,11 @@ function finalizar_partida(venceu) {
     var ctrl = Obj_blackjack_controller;
     if (venceu) {
         global.fichas_atuais += ctrl.fichas_inimigo_aposta;
-        ctrl.mensagem = "Vitória! + " + string(ctrl.fichas_inimigo_aposta) + " Fichas.";
+        ctrl.mensagem = Obj_main_menu.texto_vitoria[Obj_main_menu.lang_index] + string(ctrl.fichas_inimigo_aposta) + Obj_main_menu.texto_fichas[Obj_main_menu.lang_index];
     } else {
         var novo_fps = game_get_speed(gamespeed_fps) - ctrl.aposta_fps;
         game_set_speed(max(global.fps_minimo, novo_fps), gamespeed_fps);
-        ctrl.mensagem = "Derrota! Você perdeu " + string(ctrl.aposta_fps) + " FPS.";
+        ctrl.mensagem = Obj_main_menu.texto_derrota[Obj_main_menu.lang_index] + string(ctrl.aposta_fps) + " FPS.";
     }
     ctrl.revelar_dealer = true;
     ctrl.estado = "resultado";

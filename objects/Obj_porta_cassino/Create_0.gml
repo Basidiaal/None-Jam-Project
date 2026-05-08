@@ -4,3 +4,7 @@ aberta = false;
 raio_interacao = 80;
 mensagem_timer = 0; // Para fazer a mensagem sumir depois de um tempo
 mensagem_texto = "";
+
+
+// No Create
+minha_velocidade = image_speed;

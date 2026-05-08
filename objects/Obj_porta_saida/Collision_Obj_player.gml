@@ -1,5 +1,10 @@
 /// @description Lógica de transporte
-
+if (global.pause) {
+    image_speed = 0;
+    exit; // Para o código aqui e não executa o que vem abaixo
+} else {
+    image_speed = 1; // Retoma a animação (ou a velocidade que você usa)
+}
 if (trancada) {
     // Feedback de porta trancada
     if (keyboard_check_pressed(ord("E"))) {

@@ -1,5 +1,9 @@
-/// @description Lógica Temporal + Fade
-
+if (global.pause) {
+    image_speed = 0;
+    exit;
+} else {
+    image_speed = minha_velocidade; // Retoma a velocidade correta de cada objeto
+}
 // 1. Verifica se o jogador está perto
 var _player_perto = place_meeting(x, y, Obj_player);
 
@@ -15,7 +19,7 @@ if (_player_perto && !executando_fade) {
             
         } else {
             // FALHA: Dica do vilão
-            show_message("Porta bloqueada. Resolva o puzzle no bilhete ao lado da porta.");
+            show_message(Obj_main_menu.texto_instrucao2[Obj_main_menu.lang_index]);
         }
     }
 }

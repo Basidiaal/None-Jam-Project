@@ -16,7 +16,7 @@ if (instance_exists(Obj_player)) {
 // 0.5 = Metade do tamanho
 // 2 = Dobro do tamanho
 
-draw_text_transformed(x, y - 70, "JOGAR BLACKJACK?", 0.7, 0.7, 0);
+draw_text_transformed(x, y - 70, Obj_main_menu.texto_jogar_blackjack[Obj_main_menu.lang_index], 0.7, 0.7, 0);
         // Dica visual opcional: Desenha o ícone de uma tecla (ex: 'E' ou 'Espaço')
         // draw_text(x, y + 60, "[E]"); 
     }

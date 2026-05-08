@@ -1,5 +1,5 @@
 /// Evento Draw GUI - Obj_blackjack_controller
-
+draw_set_font(Fnt_puzzle_portas)
 // 1. CONFIGURAÇÕES DE ESCALA E ANCORAGEM (O "Coração" do sistema)
 var _gui_w = display_get_gui_width();
 var _gui_h = display_get_gui_height();
@@ -84,10 +84,10 @@ if (estado == "apostando") {
 if (estado == "player_vez") {
 	
     draw_sprite_ext(Spr_botoes_gui, 2, _centro_x - 120, _btn_y, 2, 2, 0, c_white, 1);
-    draw_text(_centro_x - 120, _btn_y - 40, "H (HIT)");
+    draw_text(_centro_x - 120, _btn_y - 40, Obj_main_menu.texto_pedir[Obj_main_menu.lang_index]);
     
     draw_sprite_ext(Spr_botoes_gui, 1, _centro_x + 120, _btn_y, 2, 2, 0, c_white, 1);
-    draw_text(_centro_x + 120, _btn_y - 40, "S (STAND)");
+    draw_text(_centro_x + 120, _btn_y - 40, Obj_main_menu.texto_manter[Obj_main_menu.lang_index]);
     
    // PONTUAÇÃO ANCORADA À ESCALA
     // Multiplicamos o deslocamento (80 e 120) pela escala da mesa
@@ -96,7 +96,7 @@ if (estado == "player_vez") {
     var _tamanho_texto = _escala_mesa * 0.3; // Ajuste o 0.8 se ainda achar grande ou pequeno
     
     // Texto do Jogador (Abaixo do centro)
-    draw_text_transformed(_centro_x, _centro_y + (10 * _escala_mesa), "Sua Soma: " + string(somar_mao(mao_player)), _tamanho_texto, _tamanho_texto, 0);
+    draw_text_transformed(_centro_x, _centro_y + (10 * _escala_mesa),Obj_main_menu.texto_soma[Obj_main_menu.lang_index] + string(somar_mao(mao_player)), _tamanho_texto, _tamanho_texto, 0);
     
     // Texto do Dealer (Acima do centro)
     draw_text_transformed(_centro_x, _centro_y - (30 * _escala_mesa), "Dealer: ? + " + string(somar_mao_visivel(mao_dealer, true)), _tamanho_texto, _tamanho_texto, 0);
@@ -111,7 +111,7 @@ if (estado == "resultado") {
 
     var _space_y = _mesa_y2 - 100;
     draw_set_color(c_white);
-    draw_text(_centro_x, _space_y + 45, "CONTINUAR");
+    draw_text(_centro_x, _space_y + 45,Obj_main_menu.texto_continuar[Obj_main_menu.lang_index]);
     draw_sprite_ext(Spr_botoes_gui, 3, _centro_x, _space_y, 2, 2, 0, c_white, 1);
 }
 
@@ -120,7 +120,7 @@ var _esc_x = _mesa_x1 + 60;
 var _esc_y = _mesa_y1 + 60;
 
 draw_set_halign(fa_center);
-draw_text(_esc_x, _esc_y + 35, "SAIR");
+draw_text(_esc_x, _esc_y + 35, Obj_main_menu.texto_sair[Obj_main_menu.lang_index]);
 draw_sprite_ext(Spr_botoes_gui, 0, _esc_x, _esc_y, 2, 2, 0, c_white, 1);
 
 // Reseta o desenho

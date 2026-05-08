@@ -1,3 +1,9 @@
+if (global.pause) {
+    image_speed = 0;
+    exit;
+} else {
+    image_speed = minha_velocidade; // Retoma a velocidade correta de cada objeto
+}
 event_inherited()
 // Evento Step do obj_porta_trancada
 if (!instance_exists(Obj_fade) && place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {

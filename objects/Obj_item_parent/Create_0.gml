@@ -10,3 +10,7 @@ meu_offset_y = 16;
 
 // Variável para o som de drop (coloque um som genérico como padrão)
 som_drop = Snd_drop_padrao;
+
+
+// No Create
+minha_velocidade = image_speed;

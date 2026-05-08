@@ -1,4 +1,7 @@
+
 randomize();
+// No Create
+minha_velocidade = image_speed;
 nivel_atual = 1; 
 sequencia = [0, 1, 2, 3]; 
 array_shuffle_ext(sequencia);

@@ -1,3 +1,9 @@
+if (global.pause) {
+    image_speed = 0;
+    exit; // Para o código aqui e não executa o que vem abaixo
+} else {
+    image_speed = 1; // Retoma a animação (ou a velocidade que você usa)
+}
 /// @desc Ativa o P2 com Glitch
 if (!instance_exists(Obj_player_2)) {
     // 1. Cria o glitch e avisa que é para ATIVAR

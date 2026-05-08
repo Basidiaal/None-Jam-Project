@@ -14,3 +14,6 @@ for (var i = 0; i < 3; i++) {
     rolos_pos[i] = 0;
     rolos_vel[i] = 0;
 }
+
+// No Create
+minha_velocidade = image_speed;

@@ -1,7 +1,12 @@
 var _instancia_porta = instance_place(x, y, Obj_porta);
 
 if (_instancia_porta != noone) {
-    with (_instancia_porta) {
+   // Marcamos o player como congelado ANTES de entrar no with
+    frozen = true; 
+    velh = 0;
+    velv = 0;
+   with (_instancia_porta) {
+
         
         // --- ESTÁGIO 4: AS 5 PORTAS COM DESTINOS ESPECÍFICOS ---
         if (global.puzzle_stage == 4) {
@@ -28,12 +33,13 @@ if (_instancia_porta != noone) {
                 ini_open("save_meta.ini");
                 ini_write_real("Status", "restart_feito", 1);
                 ini_close();
-                show_message("Dica 1:  a oportunidade é como uma JANELA as vezes a JANELA precisa \nser FECHADA para uma porta ser aberta.");
+                show_message(Obj_main_menu.texto_dica1[Obj_main_menu.lang_index]);
             }
 
             // Inicia o Fade para a sala externa
             var _f = instance_create_layer(0, 0, "Instances", Obj_fade);
             _f.target_room = Sala_2; 
+			
             exit;
         }
 
@@ -42,19 +48,24 @@ if (_instancia_porta != noone) {
             global.puzzle_stage += 1;
             
             if (global.puzzle_stage > 5) {
+				
                 if (file_exists("save_meta.ini")) file_delete("save_meta.ini");
-                room_goto(Sala_3); 
+				var _f = instance_create_layer(0, 0, "Instances", Obj_fade);
+                _f.target_room = Sala_3;
             } else {
                var _f = instance_create_layer(0, 0, "Instances", Obj_fade);
                _f.target_room = "restart";
+	   
             }
         } else {
+		
             // Porta Falsa nos estágios 1, 2 ou 3: Volta pro início
            global.puzzle_stage = 1;
            global.interacted_count = 0; // Importante resetar isso também!
 
-       var _f = instance_create_layer(0, 0, "Instances", obj_fade);
+       var _f = instance_create_layer(0, 0, "Instances", Obj_fade);
        _f.target_room = Sala_2;
+	
         }
     }
 }

@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_enable_checkpoint",
-    "path":"sprites/Spr_enable_checkpoint/Spr_enable_checkpoint.yy",
+    "name":"Spr_pintura",
+    "path":"sprites/Spr_pintura/Spr_pintura.yy",
   },
   "spriteMaskId":null,
   "visible":true,

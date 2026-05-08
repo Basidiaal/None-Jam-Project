@@ -34,13 +34,13 @@ if (aberto) {
         
         // Texto piscando em amarelo no topo da máquina
         draw_set_color(c_yellow);
-        draw_text(_cx, _cy - 160, "TARGET: " + string(_valor) + " FPS");
+        draw_text(_cx, _cy - 160, Obj_main_menu.texto_alvo[Obj_main_menu.lang_index] + string(_valor) + " FPS");
         
         if (_valor >= 20) {
             // Alerta de sobrecarga
             draw_set_color(c_red);
             var _piscando = (current_time % 500 < 250); // Efeito de piscar
-            if (_piscando) draw_text(_cx, _cy - 140, "!!! OVERCLOCK CRITICAL !!!");
+            if (_piscando) draw_text(_cx, _cy - 140, Obj_main_menu.texto_sobrecarga[Obj_main_menu.lang_index]);
         }
     }
 
@@ -48,20 +48,20 @@ if (aberto) {
     draw_set_color(c_white);
 
     if (estado == "idling" && !ganhou_nesta_sessao) {
-        draw_text(_cx, _cy + 100, "[E] ENGAGE SEQUENCER");
+        draw_text(_cx, _cy + 100, Obj_main_menu.texto_ativar[Obj_main_menu.lang_index]);
     } 
     else if (estado == "resultado") {
         if (ganhou_nesta_sessao) {
             draw_set_color(c_lime);
-            draw_text(_cx, _cy + 100, "SYNC COMPLETE");
+            draw_text(_cx, _cy + 100,Obj_main_menu.texto_sincronizacao_concluida[Obj_main_menu.lang_index]);
         } else {
             draw_set_color(c_red);
-            draw_text(_cx, _cy + 100, "SYNC FAILED");
+            draw_text(_cx, _cy + 100, Obj_main_menu.texto_sincronizacao_falhou[Obj_main_menu.lang_index]);
         }
     }
     
     // Texto de ajuda pequeno no canto
     draw_set_alpha(0.5);
-    draw_text(_cx, _cy + 160, "[ESC] TO ABORT");
+    draw_text(_cx, _cy + 160, Obj_main_menu.texto_sair2[Obj_main_menu.lang_index]);
     draw_set_alpha(1);
 }

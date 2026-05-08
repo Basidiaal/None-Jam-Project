@@ -6,6 +6,6 @@ if (game_get_speed(gamespeed_fps) <= 5) {
     var _dist = point_distance(x, y, Obj_player.x, Obj_player.y);
     if (_dist < 70) {
         draw_set_halign(fa_center);
-        draw_text(x, y - 40, "[E] REPARAR");
+        draw_text(x, y - 40, Obj_main_menu.texto_recuperar_fps[Obj_main_menu.lang_index]);
     }
 }

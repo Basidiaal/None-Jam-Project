@@ -1,3 +1,10 @@
+if (global.pause) {
+    image_speed = 0;
+    exit;
+} else {
+    image_speed = minha_velocidade; // Retoma a velocidade correta de cada objeto
+}
+
 // Se o desafio acabou, ele começa a subir
 if (global.puzzle_completo) {
     subindo = true;

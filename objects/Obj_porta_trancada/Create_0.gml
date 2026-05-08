@@ -8,3 +8,6 @@ sala_destino = Sala_cozinha; // Alvo da transição (mude no editor de sala)
 // Para o efeito de tremor
 x_original = x;
 shake_porta = false;
+
+// No Create
+minha_velocidade = image_speed;

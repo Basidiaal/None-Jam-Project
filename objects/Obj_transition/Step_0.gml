@@ -1,4 +1,9 @@
-
+if (global.pause) {
+    image_speed = 0;
+    exit; // Para o código aqui e não executa o que vem abaixo
+} else {
+    image_speed = 1; // Retoma a animação (ou a velocidade que você usa)
+}
 //já mudei de room
 if(mudei){
 	

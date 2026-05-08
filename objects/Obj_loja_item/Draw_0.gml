@@ -22,6 +22,6 @@ if (_dist < raio_interacao) {
         draw_text(x, y - 35, "SISTEMA ESTÁVEL");
     } else {
         draw_set_color(_cor_preco);
-        draw_text(x, y - 35, string(preco) + " FICHAS");
+        draw_text(x, y - 35, string(preco) + Obj_main_menu.texto_fichas[Obj_main_menu.lang_index]);
     }
 }

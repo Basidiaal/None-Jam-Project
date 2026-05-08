@@ -1,3 +1,11 @@
+if (global.pause) {
+    image_speed = 0;
+    exit;
+} else {
+    image_speed = minha_velocidade; // Retoma a velocidade correta de cada objeto
+}
+
+
 // Timers de Feedback (V, X, Concluído)
 if (feedback_p1_timer > 0) feedback_p1_timer--; else feedback_p1_tipo = 0;
 if (feedback_p2_timer > 0) feedback_p2_timer--; else feedback_p2_tipo = 0;

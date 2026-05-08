@@ -25,7 +25,7 @@ deck = ds_list_create();
 for(var i=0; i<52; i++) ds_list_add(deck, i);
 ds_list_shuffle(deck);
 
-mensagem = "Quanto FPS deseja apostar?";
+mensagem = Obj_main_menu.texto_aposta[Obj_main_menu.lang_index];
 
 largura_gui = display_get_gui_width();
 altura_gui = display_get_gui_height();

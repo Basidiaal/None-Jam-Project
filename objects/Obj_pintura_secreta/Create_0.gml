@@ -8,3 +8,6 @@ dist_maxima = 600;
 
 // Mesmo que não usemos mais o emissor, defina-o como noone para evitar o erro
 meu_emissor = noone;
+
+// No Create
+minha_velocidade = image_speed;

@@ -12,7 +12,7 @@ draw_set_alpha(1.0);
 // 2. Desenha o papel centralizado
 var _escala = 2; // Ajuste conforme o tamanho do seu sprite
 if (sprite_exists(Spr_documento_gui)) {
-    draw_sprite_ext(Spr_documento_gui, 0, _sw/2, _sh/2, _escala, _escala, 0, c_white, 1);
+    draw_sprite_ext(Obj_main_menu.sprite_texto[Obj_main_menu.lang_index], 0, _sw/2, _sh/2, _escala, _escala, 0, c_white, 1);
 }
 
 // 3. Desenha o texto por cima
@@ -25,4 +25,4 @@ draw_text_ext(_sw/2, _sh/2, texto, 20, sprite_get_width(Spr_documento_gui) * _es
 
 // 4. Instrução para fechar
 draw_set_color(c_white);
-draw_text(_sw/2, _sh - 50, "Pressione Enter para fechar");
+draw_text(_sw/2, _sh - 50, Obj_main_menu.texto_pressione_e[Obj_main_menu.lang_index]);

@@ -1,4 +1,5 @@
-
+// No Create
+minha_velocidade = image_speed;
 tipo = "ativar"; // O padrão será ativar, mas vamos mudar para "desativar" quando necessário
 timer = 0;
 duracao = 40; // Quantos frames o efeito dura

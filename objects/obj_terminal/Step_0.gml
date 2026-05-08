@@ -1,3 +1,10 @@
+if (global.pause) {
+    image_speed = 0;
+    exit;
+} else {
+    image_speed = minha_velocidade; // Retoma a velocidade correta de cada objeto
+}
+
 image_speed = 0;
 image_index = cor_do_terminal;
 // 1. Checa se o Player 1 está colidindo e apertou E

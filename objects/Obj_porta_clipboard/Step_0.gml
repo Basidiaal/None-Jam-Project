@@ -1,5 +1,9 @@
-/// @description Scanner + Fade System
-
+if (global.pause) {
+    image_speed = 0;
+    exit;
+} else {
+    image_speed = minha_velocidade; // Retoma a velocidade correta de cada objeto
+}
 // 1. Verifica se o jogador está perto e apertou E
 if (!executando_fade && place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
     
@@ -12,17 +16,17 @@ if (!executando_fade && place_meeting(x, y, Obj_player) && keyboard_check_presse
             // SUCESSO
             if (!aberta) {
                 aberta = true;
-                show_message("SISTEMA: DNA digital confirmado. Porta liberada.");
+                show_message(Obj_main_menu.texto_palavra_chave_certa[Obj_main_menu.lang_index]);
             }
             
             // Ativa o início da transição
             executando_fade = true; 
             
         } else {
-            show_message("VILÃO: O que é isso que você está carregando? '" + _texto_copiado + "' não é a chave...");
+            show_message( Obj_main_menu.texto_advertencia[Obj_main_menu.lang_index] + _texto_copiado + Obj_main_menu.texto_nao_e_a_chave[Obj_main_menu.lang_index]);
         }
     } else {
-        show_message("SISTEMA: Erro. Área de transferência vazia.");
+        show_message(Obj_main_menu.texto_palavra_chave_errada[Obj_main_menu.lang_index]);
     }
 }
 

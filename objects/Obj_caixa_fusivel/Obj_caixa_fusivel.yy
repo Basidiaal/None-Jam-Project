@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_controlador_de_fps",
-    "path":"sprites/Spr_controlador_de_fps/Spr_controlador_de_fps.yy",
+    "name":"Spr_caixa_de_fuzivel",
+    "path":"sprites/Spr_caixa_de_fuzivel/Spr_caixa_de_fuzivel.yy",
   },
   "spriteMaskId":null,
   "visible":true,

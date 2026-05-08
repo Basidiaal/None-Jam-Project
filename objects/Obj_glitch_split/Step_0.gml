@@ -1,3 +1,10 @@
+if (global.pause) {
+    image_speed = 0;
+    exit;
+} else {
+    image_speed = minha_velocidade; // Retoma a velocidade correta de cada objeto
+}
+
 timer++;
 
 // EXATAMENTE NO MEIO DA TRANSIÇÃO (Frame 20), a gente divide as câmeras

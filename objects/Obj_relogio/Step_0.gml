@@ -1,3 +1,10 @@
+if (global.pause) {
+    image_speed = 0;
+    exit;
+} else {
+    image_speed = minha_velocidade; // Retoma a velocidade correta de cada objeto
+}
+
 // 1. Atualiza visualmente o frame (Sempre rodando)
 // Frame 0: Vazio | 1: Horas | 2: Minutos | 3: Ambos
 image_index = (tem_horas * 1) + (tem_minutos * 2);
