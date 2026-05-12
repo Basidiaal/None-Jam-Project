@@ -4,7 +4,7 @@ if (global.pause) {
 } else {
     image_speed = minha_velocidade; // Retoma a velocidade correta de cada objeto
 }
-depth = -y;
+
 
 if (subir) {
     // 1. Tocar o som se ele ainda não estiver tocando

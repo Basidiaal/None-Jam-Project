@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_porta_saida",
-    "path":"sprites/Spr_porta_saida/Spr_porta_saida.yy",
+    "name":"Spr_porta_falsa",
+    "path":"sprites/Spr_porta_falsa/Spr_porta_falsa.yy",
   },
   "spriteMaskId":null,
   "visible":true,

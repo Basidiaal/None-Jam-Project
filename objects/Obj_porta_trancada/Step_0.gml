@@ -17,9 +17,9 @@ if (!instance_exists(Obj_fade) && place_meeting(x, y, Obj_player) && keyboard_ch
             if (consumivel) _inv.item_segurando = noone;
         } else {
             // Tremor de erro se não tiver a chave
-           // shake_porta = true;
+            //shake_porta = true;
             //alarm[1] = 10;
-            //audio_play_sound(snd_porta_trancada, 5, false);
+            audio_play_sound(Snd_locked_door, 5, false);
             //global.texto_ui = "PRECISO DA CHAVE DE ANÚBIS.";
             //global.exibir_ui = true;
             //alarm[0] = 60;

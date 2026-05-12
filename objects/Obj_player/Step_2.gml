@@ -67,3 +67,11 @@ repeat(abs(velv)){
   y += _velv;
 	
 }
+
+// Pega a posição atual da câmera
+var _cam_x = camera_get_view_x(view_camera[0]);
+var _cam_y = camera_get_view_y(view_camera[0]);
+
+// Arredonda a posição para o número inteiro mais próximo
+// 'floor' arredonda para baixo, 'round' para o mais próximo. Teste ambos.
+camera_set_view_pos(view_camera[0], floor(_cam_x), floor(_cam_y));
