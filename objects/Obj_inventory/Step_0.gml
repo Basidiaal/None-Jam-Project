@@ -7,12 +7,15 @@ if (keyboard_check_pressed(ord("G")) && item_segurando != noone) {
     var _drop_y = Obj_player.y;
 
     if (_movel != noone && distance_to_object(_movel) < 30) {
+
         // 1. Achamos a altura exata do tampo da mesa
         var _tampo_da_mesa = _movel.y - _movel.distancia_ate_o_tampo;
         
         // 2. Posicionamos o item para que a BASE dele toque o tampo
-        _drop_x = _movel.x;
-        _drop_y = _tampo_da_mesa; 
+        _drop_x = clamp(Obj_player.x, _movel.bbox_left + 5, _movel.bbox_right - 5); 
+    _drop_y = _tampo_da_mesa; 
+    
+   
         
         // Se a origem do item for no meio, ele precisa subir metade da sua altura
         // para não ficar metade dentro da mesa.
