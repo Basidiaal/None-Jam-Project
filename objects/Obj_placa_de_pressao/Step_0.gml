@@ -12,5 +12,6 @@ for (var i = 0; i < array_length(minhas_barreiras); i++) {
     var _inst = minhas_barreiras[i];
     if (instance_exists(_inst)) {
         _inst.aberta = pressionado;
+		//sprite_index = 1;
     }
 }

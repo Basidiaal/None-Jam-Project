@@ -136,7 +136,7 @@ switch(estado)
 		break;
 	}
 	#endregion
-	
+	/*
 	#region pulando
 	case "pulando":
 	{
@@ -163,7 +163,7 @@ switch(estado)
 	}
 	#endregion
 	
-	
+	*/
 	
 	case "death":
 	{

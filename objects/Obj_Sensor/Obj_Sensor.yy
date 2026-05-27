@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_Sensor",
-    "path":"sprites/Spr_Sensor/Spr_Sensor.yy",
+    "name":"Spr_porta_falsa",
+    "path":"sprites/Spr_porta_falsa/Spr_porta_falsa.yy",
   },
   "spriteMaskId":null,
   "visible":true,

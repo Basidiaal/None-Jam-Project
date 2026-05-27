@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_parede",
-    "path":"sprites/Spr_parede/Spr_parede.yy",
+    "name":"Spr_barreira",
+    "path":"sprites/Spr_barreira/Spr_barreira.yy",
   },
   "spriteMaskId":null,
   "visible":true,

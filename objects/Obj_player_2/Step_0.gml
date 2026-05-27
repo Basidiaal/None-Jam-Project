@@ -115,34 +115,6 @@ switch(estado)
 	}
 	#endregion
 	
-	#region pulando
-	case "pulando":
-	{
-		//animação de caindo
-		if(velv > 0){
-			sprite_index = Spr_Player_fall
-		}
-		//animação de pulo
-		else{
-			sprite_index = Spr_Player_jump;
-			//garantindo que a animação não se repita
-			if(image_index >= image_number-1){
-			 image_index = image_number-1	
-			}
-		}
-		
-		if(chao){
-			estado = "parado";
-			velh = 0;
-		}
-	
-	
-	 break;
-	}
-	#endregion
-	
-	
-	
 	
 	
 	

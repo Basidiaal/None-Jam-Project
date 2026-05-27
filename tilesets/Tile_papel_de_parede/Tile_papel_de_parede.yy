@@ -12,8 +12,8 @@
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"Conjuntos de tiles",
-    "path":"folders/Conjuntos de tiles.yy",
+    "name":"sala_principal",
+    "path":"folders/Conjuntos de tiles/sala_principal.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
