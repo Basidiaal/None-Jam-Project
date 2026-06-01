@@ -26,3 +26,4 @@ if (item_segurando != noone) {
     // ele desenhe como se a origem fosse no canto superior esquerdo.
     draw_sprite_ext(_spr, 0, _sprite_x + _ajuste_x, _sprite_y + _ajuste_y, _escala, _escala, 0, c_white, 1);
 }
+draw_set_color(-1);

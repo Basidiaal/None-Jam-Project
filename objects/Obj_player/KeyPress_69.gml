@@ -83,3 +83,15 @@ if (_porta_comum != noone) {
     var _f = instance_create_layer(0, 0, "Instances", Obj_fade);
     _f.target_room = _porta_comum.Sala_destino;
 }
+
+var _porta_comum_2 = instance_place(x, y, Obj_porta_simples_1);
+
+if (_porta_comum_2 != noone) {
+    // Definimos as coordenadas de destino no player antes de mudar de sala
+    global.player_start_x = _porta_comum_2.target_x;
+    global.player_start_y = _porta_comum_2.target_y;
+
+    // Chama o objeto de Fade que criamos anteriormente
+    var _f = instance_create_layer(0, 0, "Instances", Obj_fade);
+    _f.target_room = _porta_comum_2.Sala_destino;
+}

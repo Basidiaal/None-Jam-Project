@@ -1,5 +1,7 @@
 
 
+estado = "parado";
+
 //criando camera
 var cam = instance_create_layer(x,y,layer,Obj_Camera);
 cam.target = id;
@@ -29,7 +31,7 @@ img_spd = 40;
 
 combo = 0;
 
-estado = "parado";
+
 
 
 

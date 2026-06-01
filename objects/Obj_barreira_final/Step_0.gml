@@ -18,7 +18,7 @@ if (subindo) {
         y -= velocidade_subida;
         
         // Efeito de tremor opcional
-        x += random_range(-1, 1); 
+        //x += random_range(-1, 1); 
     } else {
         y = _alvo; // Garante que pare exatamente no alvo
         subindo = false;

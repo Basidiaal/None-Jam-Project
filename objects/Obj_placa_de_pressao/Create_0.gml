@@ -1,5 +1,5 @@
 // No Create
-minha_velocidade = image_speed;
+image_speed = 0;
 
 pressionado = false;
 minhas_barreiras = []; // Criamos um array vazio

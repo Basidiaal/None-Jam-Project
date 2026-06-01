@@ -3,7 +3,7 @@
   "%Name":"Spr_porao",
   "bboxMode":0,
   "bbox_bottom":422,
-  "bbox_left":389,
+  "bbox_left":576,
   "bbox_right":979,
   "bbox_top":128,
   "collisionKind":1,

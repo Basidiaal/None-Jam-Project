@@ -13,7 +13,7 @@ var _destino = aberta ? y_alvo : y_inicial;
 
 
 // CONDIÇÃO ESPECIAL: Se o puzzle acabou, o destino é SEMPRE o y_alvo (aberta)
-if (global.puzzle_completo) {
+if (global.liberar_caminho) {
     _destino = y_alvo;
 }
 

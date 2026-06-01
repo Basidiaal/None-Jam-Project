@@ -51,13 +51,13 @@ var chao = place_meeting(x,y + 1,Obj_Block);
 
 right = keyboard_check(ord("D"));
 left = keyboard_check(ord("A"));
-jump = keyboard_check(vk_space);
+//jump = keyboard_check(vk_space);
 
 
 
 
 
-if(current_life <= 0) estado = "death";
+
 
 
 
@@ -90,10 +90,13 @@ switch(estado)
 	sprite_index = Spr_Player_idle;
 	
 	//troca de estado:movendo
-	if(right || left){
-	
-	estado = "movendo";
-	}
+	if (right && !place_meeting(x + 1, y, Obj_Block)) {
+            estado = "movendo";
+        }
+        else if (left && !place_meeting(x - 1, y, Obj_Block)) {
+            estado = "movendo";
+        }
+	/*
 	//pulando parado
 	else if (jump || velv != 0){
 		
@@ -101,7 +104,7 @@ switch(estado)
 	velv = (-max_velv * jump);
 		image_index = 0;
 	}
-	
+	*/
 	
 		
 	
@@ -113,7 +116,7 @@ switch(estado)
 	#region movendo
 	case "movendo":
 	{
-		sprite_index = Spr_Player_run;
+		sprite_index = Spr_Player_walking;
 		
 		
 		//troca de estado:parado
@@ -121,6 +124,15 @@ switch(estado)
 			estado = "parado"
 			velh = 0;
 		}
+		else if (right && place_meeting(x + 1, y, Obj_Block)) {
+            estado = "parado";
+            velh = 0;
+        }
+        else if (left && place_meeting(x - 1, y, Obj_Block)) {
+            estado = "parado";
+            velh = 0;
+        }
+		/*
 		//pulando enquanto corre
 	else if (jump || velv != 0){
 		
@@ -128,6 +140,7 @@ switch(estado)
 	     velv = (-max_velv * jump);
 		 	image_index = 0;
 	} 
+	*/
 		
 	
 		

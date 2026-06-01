@@ -23,13 +23,13 @@ if (global.pause) {
 
 
 //variaveis
-var right,left,jump;
+var right,left;
 var chao = place_meeting(x,y + 1,Obj_Block);
 
 
 right = keyboard_check(vk_right);
 left = keyboard_check(vk_left);
-jump = keyboard_check(vk_up);
+
 
 
 
@@ -71,13 +71,7 @@ switch(estado)
 	
 	estado = "movendo";
 	}
-	//pulando parado
-	else if (jump || velv != 0){
-		
-	estado = "pulando";
-	velv = (-max_velv * jump);
-		image_index = 0;
-	}
+	
 	
 	
 	
@@ -91,7 +85,7 @@ switch(estado)
 	#region movendo
 	case "movendo":
 	{
-		sprite_index = Spr_Player_run;
+		sprite_index = Spr_Player_walking;
 		
 		
 		//troca de estado:parado
@@ -99,13 +93,8 @@ switch(estado)
 			estado = "parado"
 			velh = 0;
 		}
-		//pulando enquanto corre
-	else if (jump || velv != 0){
 		
-	    estado = "pulando";
-	     velv = (-max_velv * jump);
-		 	image_index = 0;
-	} 
+	
 		
 	
 		

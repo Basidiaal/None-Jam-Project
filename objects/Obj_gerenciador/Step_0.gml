@@ -38,7 +38,14 @@ if (exibindo_sequencia) {
 }
 
 // Avanço de Nível e Feedback de Conclusão
+// Avanço de Nível e Feedback de Conclusão
 if (passo_p1 == 4 && passo_p2 == 4) {
+    
+    // Se o jogo já acabou por completo, impede que a lógica de nível rode novamente
+    if (global.puzzle_completo) {
+        exit; 
+    }
+
     // Ativa feedback de "Fase Concluída" nas duas telas
     feedback_p1_tipo = 3; 
     feedback_p1_timer = 120;
@@ -53,5 +60,8 @@ if (passo_p1 == 4 && passo_p2 == 4) {
         array_shuffle_ext(sequencia);
     } else {
         global.puzzle_completo = true;
+        // Zera os passos para o jogo entender que saiu do estado de checagem
+        passo_p1 = 0;
+        passo_p2 = 0;
     }
 }

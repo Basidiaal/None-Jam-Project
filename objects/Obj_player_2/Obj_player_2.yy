@@ -39,6 +39,9 @@
     "name":"Spr_Player_idle",
     "path":"sprites/Spr_Player_idle/Spr_Player_idle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"Spr_Player_walking_1",
+    "path":"sprites/Spr_Player_walking_1/Spr_Player_walking_1.yy",
+  },
   "visible":true,
 }

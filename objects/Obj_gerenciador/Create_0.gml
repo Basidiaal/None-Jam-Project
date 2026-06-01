@@ -12,7 +12,7 @@ passo_p2 = 0;
 
 // Bloqueio para evitar que terminem o puzzle antes de chegar no nível 3
 global.puzzle_completo = false;
-
+global.liberar_caminho = false;
 global.item_coletado = false;
 
 // Novas variáveis para o Carrossel da Tela

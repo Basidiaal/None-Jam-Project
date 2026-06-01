@@ -2,7 +2,7 @@ if (global.pause) {
     image_speed = 0;
     exit;
 } else {
-    image_speed = minha_velocidade; // Retoma a velocidade correta de cada objeto
+    image_speed = minha_velocidade; 
 }
 
 if (!instance_exists(Obj_gerenciador)) exit;
@@ -10,12 +10,19 @@ var _gerente = Obj_gerenciador;
 
 var _meu_feedback = sou_tela_1 ? _gerente.feedback_p1_tipo : _gerente.feedback_p2_tipo;
 
+
+// =========================================================================
+// 0. PRIORIDADE ABSOLUTA: Desafio Totalmente Concluído (Fim das 3 fases)
+// =========================================================================
+if (global.puzzle_completo) {
+    image_index = 18; // Trava o frame número 18 fixo na tela
+} 
 // 1. PRIORIDADE MÁXIMA: Feedbacks (V, X ou Fase Concluída)
-if (_meu_feedback != 0) {
+else if (_meu_feedback != 0) {
     if (_meu_feedback == 1) image_index = 13; // Frame V
     else if (_meu_feedback == 2) image_index = 14; // Frame X
-    else if (_meu_feedback == 3) image_index = 18; // Frame Fase Concluída
-} 
+    else if (_meu_feedback == 3) image_index = 12; // Frame Fase Concluída
+}
 // 2. SEGUNDA PRIORIDADE: Intro de Nível (Fase 1, 2 ou 3)
 else if (_gerente.exibindo_intro) {
     if (_gerente.nivel_atual == 1) image_index = 15;
