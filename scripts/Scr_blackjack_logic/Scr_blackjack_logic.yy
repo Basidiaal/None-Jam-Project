@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Scr_blackjack_logic",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Scr_blackjack_logic",
+  "parent":{
+    "name":"desafio2",
+    "path":"folders/Scripts/desafio2.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

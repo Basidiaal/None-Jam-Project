@@ -1,0 +1,1 @@
+draw_text(200, 60, "Fichas na conta: " + string(global.fichas_atuais));

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_voltar_ao_normal",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_voltar_ao_normal",
+  "parent":{
+    "name":"desafio1",
+    "path":"folders/Scripts/desafio1.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

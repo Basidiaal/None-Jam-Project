@@ -1,0 +1,1 @@
+minhas_barreiras = [inst_4643BEDE];

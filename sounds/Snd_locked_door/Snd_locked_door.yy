@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Snd_locked_door",
+  "audioGroupId":{
+    "name":"audiogroup_sound_effects",
+    "path":"audiogroups/audiogroup_sound_effects",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":2.112,
+  "name":"Snd_locked_door",
+  "parent":{
+    "name":"Sons",
+    "path":"folders/Sons.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Snd_locked_door.mp3",
+  "type":0,
+  "volume":1.0,
+}
