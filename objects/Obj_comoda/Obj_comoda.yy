@@ -6,8 +6,8 @@
   "name":"Obj_comoda",
   "overriddenProperties":[],
   "parent":{
-    "name":"moveis",
-    "path":"folders/Objetos/moveis.yy",
+    "name":"moveis-decoracao",
+    "path":"folders/Objetos/moveis-decoracao.yy",
   },
   "parentObjectId":null,
   "persistent":false,

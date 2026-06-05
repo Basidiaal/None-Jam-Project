@@ -9,7 +9,10 @@
     "name":"escritorio",
     "path":"folders/Objetos/escritorio.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Obj_porta_simples",
+    "path":"objects/Obj_porta_simples/Obj_porta_simples.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

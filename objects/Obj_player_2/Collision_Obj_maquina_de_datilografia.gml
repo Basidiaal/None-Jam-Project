@@ -16,7 +16,7 @@ if (!file_exists(global.caminho_arquivo)) {
 // 3. Ativa a UI no Controlador
 global.texto_ui = "ARQUIVO GERADO EM:\n" + global.caminho_arquivo;
 global.exibir_ui = true;
-Obj_interacao.alarm[1] = 420; // Mensagem some em 7 segundos
+Obj_maquina_de_datilografia.alarm[1] = 420; // Mensagem some em 7 segundos
 
 // 4. "DESATIVA" ESTE OBJETO (Sumiço e Colisão)
 other.sprite_index = -1;

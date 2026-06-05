@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_sofa",
+  "%Name":"Obj_teia1",
   "eventList":[],
   "managed":true,
-  "name":"Obj_sofa",
+  "name":"Obj_teia1",
   "overriddenProperties":[],
   "parent":{
     "name":"moveis-decoracao",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_sofa",
-    "path":"sprites/Spr_sofa/Spr_sofa.yy",
+    "name":"Spr_teia1",
+    "path":"sprites/Spr_teia1/Spr_teia1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
