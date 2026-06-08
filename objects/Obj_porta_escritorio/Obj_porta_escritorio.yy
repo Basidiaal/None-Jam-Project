@@ -6,8 +6,8 @@
   "name":"Obj_porta_escritorio",
   "overriddenProperties":[],
   "parent":{
-    "name":"escritorio",
-    "path":"folders/Objetos/escritorio.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":{
     "name":"Obj_porta_simples",

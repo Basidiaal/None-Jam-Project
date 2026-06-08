@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_estante",
+  "%Name":"Obj_mesa_com_abajur",
   "eventList":[],
   "managed":true,
-  "name":"Obj_estante",
+  "name":"Obj_mesa_com_abajur",
   "overriddenProperties":[],
   "parent":{
-    "name":"escritorio",
-    "path":"folders/Objetos/moveis-decoracao/escritorio.yy",
+    "name":"grupo2",
+    "path":"folders/Objetos/moveis-decoracao/grupo2.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_estante",
-    "path":"sprites/Spr_estante/Spr_estante.yy",
+    "name":"Spr_mesa_com_abajur",
+    "path":"sprites/Spr_mesa_com_abajur/Spr_mesa_com_abajur.yy",
   },
   "spriteMaskId":null,
   "visible":true,

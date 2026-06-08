@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_item_final",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Obj_lustre",
+  "eventList":[],
   "managed":true,
-  "name":"Obj_item_final",
+  "name":"Obj_lustre",
   "overriddenProperties":[],
   "parent":{
-    "name":"desafio1",
-    "path":"folders/Objetos/desafio1.yy",
+    "name":"moveis-decoracao",
+    "path":"folders/Objetos/moveis-decoracao.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_interacao",
-    "path":"sprites/Spr_interacao/Spr_interacao.yy",
+    "name":"Spr_lustre",
+    "path":"sprites/Spr_lustre/Spr_lustre.yy",
   },
   "spriteMaskId":null,
   "visible":true,

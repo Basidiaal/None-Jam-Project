@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"escritorio",
-    "path":"folders/Objetos/escritorio.yy",
+    "path":"folders/Objetos/moveis-decoracao/escritorio.yy",
   },
   "parentObjectId":null,
   "persistent":false,
