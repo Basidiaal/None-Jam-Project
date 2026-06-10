@@ -6,8 +6,8 @@
   "name":"Obj_mesa_com_abajur",
   "overriddenProperties":[],
   "parent":{
-    "name":"grupo2",
-    "path":"folders/Objetos/moveis-decoracao/grupo2.yy",
+    "name":"comodo1",
+    "path":"folders/Objetos/moveis-decoracao/comodo1.yy",
   },
   "parentObjectId":null,
   "persistent":false,
