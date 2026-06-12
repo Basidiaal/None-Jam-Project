@@ -6,6 +6,8 @@ if (global.pause) {
 
 if (global.caminho_arquivo != "" && file_exists(global.caminho_arquivo)) {
     var file = file_text_open_read(global.caminho_arquivo);
+	// Abre o explorador de arquivos exatamente na pasta onde o jogo salva os dados
+
     var sucesso = false;
     var senha = "COMPLETO";
 
