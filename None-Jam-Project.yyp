@@ -187,6 +187,7 @@
     {"id":{"name":"Sala_7","path":"rooms/Sala_7/Sala_7.yy",},},
     {"id":{"name":"Sala_8","path":"rooms/Sala_8/Sala_8.yy",},},
     {"id":{"name":"Sala_comodo1","path":"rooms/Sala_comodo1/Sala_comodo1.yy",},},
+    {"id":{"name":"Sala_corredor_2","path":"rooms/Sala_corredor_2/Sala_corredor_2.yy",},},
     {"id":{"name":"Sala_corredor","path":"rooms/Sala_corredor/Sala_corredor.yy",},},
     {"id":{"name":"Sala_cozinha","path":"rooms/Sala_cozinha/Sala_cozinha.yy",},},
     {"id":{"name":"Sala_de_resolucao_do_puzzle","path":"rooms/Sala_de_resolucao_do_puzzle/Sala_de_resolucao_do_puzzle.yy",},},
@@ -344,6 +345,7 @@
     {"roomId":{"name":"Sala_corredor","path":"rooms/Sala_corredor/Sala_corredor.yy",},},
     {"roomId":{"name":"Sala_saida","path":"rooms/Sala_saida/Sala_saida.yy",},},
     {"roomId":{"name":"Sala_comodo1","path":"rooms/Sala_comodo1/Sala_comodo1.yy",},},
+    {"roomId":{"name":"Sala_corredor_2","path":"rooms/Sala_corredor_2/Sala_corredor_2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
