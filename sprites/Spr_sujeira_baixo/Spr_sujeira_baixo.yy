@@ -3,7 +3,7 @@
   "%Name":"Spr_sujeira_baixo",
   "bboxMode":0,
   "bbox_bottom":432,
-  "bbox_left":48,
+  "bbox_left":46,
   "bbox_right":1429,
   "bbox_top":68,
   "collisionKind":1,
