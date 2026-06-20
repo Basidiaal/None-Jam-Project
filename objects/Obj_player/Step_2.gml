@@ -21,18 +21,28 @@ repeat(abs(velh))
 	}
 	if(place_meeting(x + _velh, y, Obj_barreira)){
 	velh = 0;
+	 estado = "parado";
 	break;
 	}
 	if(place_meeting(x + _velh, y, Obj_barreira_final)){
 	velh = 0;
+	 estado = "parado";
 	break;
 	}
+	
+	if(place_meeting(x + _velh, y, Obj_colisao_porta_inicio)){
+	velh = 0;
+	 estado = "parado";
+	break;
+	}
+	
 	// VERIFICAÇÃO DA PORTA
     var _inst_porta = instance_place(x + _velh, y, Obj_porta_cassino);
     if (_inst_porta != noone) {
         // SÓ para o player se a porta NÃO estiver aberta
         if (_inst_porta.aberta == false) {
             velh = 0;
+			 estado = "parado";
             break;
         }
     }
@@ -45,22 +55,33 @@ repeat(abs(velv)){
 
   if(place_meeting(x, y + _velv,Obj_Block)){
 	  velv = 0;
+	
 	  break;
   }
   if(place_meeting(x, y + _velv,Obj_barreira)){
 	  velv = 0;
+	   estado = "parado";
 	  break;
   }
    if(place_meeting(x, y + _velv,Obj_barreira_final)){
 	  velv = 0;
+	   estado = "parado";
 	  break;
   }
+ 
+   if(place_meeting(x, y + _velv, Obj_colisao_porta_inicio)){
+	  velv = 0;
+	   estado = "parado";
+	  break;
+  }
+ 
  // VERIFICAÇÃO DA PORTA
     var _inst_porta_v = instance_place(x, y + _velv, Obj_porta_cassino);
     if (_inst_porta_v != noone) {
         // SÓ para o player se a porta NÃO estiver aberta
         if (_inst_porta_v.aberta == false) {
             velv = 0;
+			 estado = "parado";
             break;
         }
     }
