@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Sotao",
-    "path":"folders/Sprites/Sala_principal/Sotao.yy",
+    "path":"folders/Sprites/Sotao.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
