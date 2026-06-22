@@ -1,5 +1,7 @@
 if (keyboard_check_pressed(ord("E"))) { // Ou sua tecla de interação
-    if (instance_exists(Obj_player)) {
+   // Se a escada estiver trancada, o código para aqui e não teleporta
+    if (esta_trancada) exit;
+   if (instance_exists(Obj_player)) {
         
         // 1. Move o Player
         Obj_player.x = destino_x_escada;

@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_escada_quebrada",
+  "%Name":"Obj_item_tabua",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_escada_quebrada",
+  "name":"Obj_item_tabua",
   "overriddenProperties":[],
   "parent":{
-    "name":"interagiveis",
-    "path":"folders/Objetos/interagiveis.yy",
+    "name":"itens",
+    "path":"folders/Objetos/itens.yy",
   },
   "parentObjectId":{
-    "name":"Obj_interativo_parent",
-    "path":"objects/Obj_interativo_parent/Obj_interativo_parent.yy",
+    "name":"Obj_item_parent",
+    "path":"objects/Obj_item_parent/Obj_item_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_escada_quebrada",
-    "path":"sprites/Spr_escada_quebrada/Spr_escada_quebrada.yy",
+    "name":"Spr_tabua",
+    "path":"sprites/Spr_tabua/Spr_tabua.yy",
   },
   "spriteMaskId":null,
   "visible":true,
