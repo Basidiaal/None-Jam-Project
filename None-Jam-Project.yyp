@@ -303,7 +303,7 @@
     {"id":{"name":"Spr_Player_idle","path":"sprites/Spr_Player_idle/Spr_Player_idle.yy",},},
     {"id":{"name":"Spr_Player_interagindo1","path":"sprites/Spr_Player_interagindo1/Spr_Player_interagindo1.yy",},},
     {"id":{"name":"Spr_Player_interagindo2","path":"sprites/Spr_Player_interagindo2/Spr_Player_interagindo2.yy",},},
-    {"id":{"name":"Spr_Player_walking_1","path":"sprites/Spr_Player_walking_1/Spr_Player_walking_1.yy",},},
+    {"id":{"name":"Spr_Player_mask","path":"sprites/Spr_Player_mask/Spr_Player_mask.yy",},},
     {"id":{"name":"Spr_Player_walking","path":"sprites/Spr_Player_walking/Spr_Player_walking.yy",},},
     {"id":{"name":"Spr_poltrona","path":"sprites/Spr_poltrona/Spr_poltrona.yy",},},
     {"id":{"name":"Spr_ponteiro_h","path":"sprites/Spr_ponteiro_h/Spr_ponteiro_h.yy",},},
