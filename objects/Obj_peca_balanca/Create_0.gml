@@ -1,5 +1,5 @@
 event_inherited();
-nome_exibicao = "Braço de Pedra";
+nome_exibicao = "Balança";
 id_item = "peca_braco";
 //som_drop = snd_drop_pedra;
 meu_offset_y = 0;

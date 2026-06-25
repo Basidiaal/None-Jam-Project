@@ -31,6 +31,9 @@
     {"$GMObjectProperty":"v1","%Name":"destino_y_escada","filters":[],"listItems":[],"multiselect":false,"name":"destino_y_escada","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"destino_lado","filters":[],"listItems":[],"multiselect":false,"name":"destino_lado","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"esta_trancada","filters":[],"listItems":[],"multiselect":false,"name":"esta_trancada","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"texto_acao","filters":[],"listItems":[],"multiselect":false,"name":"texto_acao","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Subir","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"texto_altura_offset","filters":[],"listItems":[],"multiselect":false,"name":"texto_altura_offset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"30","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"texto_largura_offset","filters":[],"listItems":[],"multiselect":false,"name":"texto_largura_offset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"32","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
@@ -40,5 +43,5 @@
     "path":"sprites/Spr_escada_teleporte/Spr_escada_teleporte.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

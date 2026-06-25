@@ -2,7 +2,7 @@
 event_inherited(); 
 
 // 2. Configura as informações exclusivas deste item
-nome_exibicao = "Tábua de Madeira"; // O texto que vai aparecer na GUI do inventário
+nome_exibicao = "Tábua"; // O texto que vai aparecer na GUI do inventário
 id_item = "tabua";                 // IMPORTANTE: Tem que ser EXATAMENTE igual ao "id_necessario" da escada
 
 // 3. Ajustes de Game Feel baseados no seu Sprite

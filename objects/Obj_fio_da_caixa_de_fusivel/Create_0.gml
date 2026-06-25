@@ -5,7 +5,7 @@
 event_inherited();
  
 
-nome_exibicao = "Fusível";
+nome_exibicao = "Fio";
 id_item = "fusivel_energia";
 meu_offset_y = 12; // Ajuste conforme o tamanho do seu fusível
 
