@@ -6,8 +6,8 @@
   "name":"Obj_colisao_porta_inicio",
   "overriddenProperties":[],
   "parent":{
-    "name":"puzzle5",
-    "path":"folders/Objetos/puzzle5.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,

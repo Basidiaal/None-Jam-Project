@@ -30,6 +30,7 @@ if (place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
        // audio_play_sound(snd_coleta, 1, false);
         instance_destroy();
     } else {
+		io_clear();
         // Feedback de erro (Mãos ocupadas)
        // global.texto_ui = "ERRO: BUFFER DE MEMÓRIA OCUPADO.";
        // global.exibir_ui = true;

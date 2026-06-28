@@ -1,5 +1,6 @@
 // User Event 0
 /// @desc Destrancar a porta
+io_clear();
 trancada = false;
 audio_play_sound(snd_destrancar, 10, false);
 

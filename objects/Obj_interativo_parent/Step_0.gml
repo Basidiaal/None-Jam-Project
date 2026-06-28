@@ -14,6 +14,7 @@ if (!instance_exists(Obj_fade) && place_meeting(x, y, Obj_player) && keyboard_ch
         
         if (consumivel) _inv.item_segurando = noone;
     } else {
+		
         // 2. Feedback de erro se não tiver a chave
         //shake_porta = true;
        // alarm[1] = 10; // Para o tremor

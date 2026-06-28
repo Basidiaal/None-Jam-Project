@@ -7,7 +7,7 @@ if (room == sala_original) {
         draw_set_halign(fa_center);
         draw_set_valign(fa_top);
         draw_set_color(c_white); // Garante que o texto seja visível
-        draw_text(x + 64, y + 13, "[E]");
+        draw_text(x + 64, y - 20, "[E]");
     }
 }
 
