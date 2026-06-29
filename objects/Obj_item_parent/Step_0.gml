@@ -18,14 +18,15 @@ if (place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
         
         // audio_play_sound(snd_coleta, 1, false);
         
-        // =======================================================
+      
+        instance_destroy();
+		  // =======================================================
         // A SOLUÇÃO DE PRIORIDADE:
         // Limpa o input do frame. Se houver uma escada ou porta
         // no mesmo lugar, elas vão achar que o "E" não foi apertado!
         // =======================================================
         io_clear();
         
-        instance_destroy();
     } else {
         // Feedback de erro (Mãos ocupadas)
         // global.texto_ui = "ERRO: BUFFER DE MEMÓRIA OCUPADO.";

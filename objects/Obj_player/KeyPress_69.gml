@@ -1,3 +1,4 @@
+
 var _instancia_porta = instance_place(x, y, Obj_porta);
 
 if (_instancia_porta != noone) {
