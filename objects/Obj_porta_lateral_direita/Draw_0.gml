@@ -6,6 +6,6 @@ draw_self();
             
             // 3. Desenha o texto perfeitamente
             draw_set_halign(fa_center);
-            draw_text(x + 50, y + 20,  "[E]");
+            draw_text(x + 50, y + 15,  "[E]");
         
     }
