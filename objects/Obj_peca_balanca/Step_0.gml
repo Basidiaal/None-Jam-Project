@@ -26,7 +26,8 @@ if (place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
 			offset_y: meu_offset_y,
 			som_ao_dropar: som_drop 
         };
-        
+        global.item_coletado_neste_frame = true;
+		io_clear();
        // audio_play_sound(snd_coleta, 1, false);
         instance_destroy();
     } else {

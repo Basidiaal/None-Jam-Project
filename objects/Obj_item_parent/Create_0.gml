@@ -14,3 +14,6 @@ som_drop = Snd_drop_padrao;
 
 // No Create
 minha_velocidade = image_speed;
+
+// No Create do Objeto Pai dos Itens:
+tempo_espera_drop = 2;

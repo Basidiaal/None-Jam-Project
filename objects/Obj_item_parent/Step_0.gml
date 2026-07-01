@@ -1,6 +1,11 @@
 if (global.pause) {
     exit;
 } 
+// Diminui o tempo de espera caso o item tenha acabado de nascer
+if (tempo_espera_drop > 0) {
+    tempo_espera_drop -= 1;
+    exit; // Impede interações nesses primeiros 2 frames
+}
 
 // 1. Checa proximidade e clique
 if (place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
@@ -17,7 +22,9 @@ if (place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
         };
         
         // audio_play_sound(snd_coleta, 1, false);
-        	  // =======================================================
+        
+		global.item_coletado_neste_frame = true;
+		// =======================================================
         // A SOLUÇÃO DE PRIORIDADE:
         // Limpa o input do frame. Se houver uma escada ou porta
         // no mesmo lugar, elas vão achar que o "E" não foi apertado!

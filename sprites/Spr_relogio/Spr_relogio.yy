@@ -2,10 +2,10 @@
   "$GMSprite":"",
   "%Name":"Spr_relogio",
   "bboxMode":0,
-  "bbox_bottom":63,
-  "bbox_left":0,
-  "bbox_right":63,
-  "bbox_top":0,
+  "bbox_bottom":109,
+  "bbox_left":2,
+  "bbox_right":29,
+  "bbox_top":14,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -13,13 +13,13 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"","%Name":"b4e06ee5-2064-42e0-9619-f20b6deff524","name":"b4e06ee5-2064-42e0-9619-f20b6deff524","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"43ac021b-48ef-43dd-abd5-560ba9b70ec0","name":"43ac021b-48ef-43dd-abd5-560ba9b70ec0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"701c239c-7e6a-4b77-898f-af34357ee5a9","name":"701c239c-7e6a-4b77-898f-af34357ee5a9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"43ac021b-48ef-43dd-abd5-560ba9b70ec0","name":"43ac021b-48ef-43dd-abd5-560ba9b70ec0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"47c7e13f-2a10-47a5-91fd-43c629c0087a","name":"47c7e13f-2a10-47a5-91fd-43c629c0087a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":64,
+  "height":114,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"528c0737-c647-4381-b982-a9b657850e20","blendMode":0,"displayName":"default","isLocked":false,"name":"528c0737-c647-4381-b982-a9b657850e20","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -75,11 +75,11 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b4e06ee5-2064-42e0-9619-f20b6deff524","path":"sprites/Spr_relogio/Spr_relogio.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"10a29789-771d-49d8-9296-e3240fb5d03b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"43ac021b-48ef-43dd-abd5-560ba9b70ec0","path":"sprites/Spr_relogio/Spr_relogio.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5d7c5016-92f4-49cd-8dde-471008723a4f","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"701c239c-7e6a-4b77-898f-af34357ee5a9","path":"sprites/Spr_relogio/Spr_relogio.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e2230fbc-8741-4d15-9d32-18b65bfe1a7d","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"e2230fbc-8741-4d15-9d32-18b65bfe1a7d","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"43ac021b-48ef-43dd-abd5-560ba9b70ec0","path":"sprites/Spr_relogio/Spr_relogio.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5d7c5016-92f4-49cd-8dde-471008723a4f","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"47c7e13f-2a10-47a5-91fd-43c629c0087a","path":"sprites/Spr_relogio/Spr_relogio.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"1bf0e2a5-2ecb-44f5-955f-9e2e40c0055c","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
@@ -98,5 +98,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":64,
+  "width":32,
 }

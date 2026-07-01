@@ -1,18 +1,19 @@
-if (keyboard_check_pressed(ord("E"))) { // Ou sua tecla de interação
-   // Se a escada estiver trancada, o código para aqui e não teleporta
+if (keyboard_check_pressed(ord("E"))) { 
+    // Se a escada estiver trancada, o código para aqui
     if (esta_trancada) exit;
-   if (instance_exists(Obj_player)) {
-        
-        // 1. Move o Player
-        Obj_player.x = destino_x_escada;
-        Obj_player.y = destino_y_escada;
-        Obj_player.xscale = destino_lado;
-        
-        // 2. Avisa a câmera para pular instantaneamente junto com ele
-        if (instance_exists(Obj_Camera)) {
-            Obj_Camera.teleportar_camera = true;
+    
+    // Evita criar mais de uma transição ao mesmo tempo se o jogador apertar repetido
+    if (!instance_exists(Obj_Transicao_Escada)) {
+        if (instance_exists(Obj_player)) {
+            
+            // Cria a transição
+            var transicao = instance_create_depth(0, 0, -9999, Obj_Transicao_Escada);
+            
+            // Passa os dados da escada para a transição resolver
+            transicao.alvo_x = destino_x_escada;
+            transicao.alvo_y = destino_y_escada;
+            transicao.alvo_lado = destino_lado;
+            
         }
-		
-        // Opcional: Adicione um som de passos ou efeito visual de transição aqui
     }
 }

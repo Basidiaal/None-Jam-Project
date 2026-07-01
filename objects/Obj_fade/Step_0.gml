@@ -1,3 +1,12 @@
+// PRIMEIRA LINHA DO STEP DO OBJ_FADE:
+if (variable_global_exists("item_coletado_neste_frame") && global.item_coletado_neste_frame == true) {
+    global.item_coletado_neste_frame = false; // Reseta a trava
+    if (instance_exists(Obj_player)) {
+        Obj_player.frozen = false; // Descongela o player se ele tiver sido congelado pela porta
+    }
+    instance_destroy(); // Destrói o fade IMEDIATAMENTE, cancelando a ida para a outra sala
+    exit; // Para o código aqui
+}
 if (global.pause) {
     exit; 
 } 

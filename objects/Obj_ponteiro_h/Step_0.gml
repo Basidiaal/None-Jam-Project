@@ -23,7 +23,8 @@ if (place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
         // Limpa o input do frame. Se houver uma escada ou porta
         // no mesmo lugar, elas vão achar que o "E" não foi apertado!
         // =======================================================
-        io_clear();
+      global.item_coletado_neste_frame = true;
+	  io_clear();
         
         instance_destroy();
     } else {

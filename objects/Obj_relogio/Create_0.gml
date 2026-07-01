@@ -5,3 +5,4 @@ revelou_hora = false;
 
 // No Create
 minha_velocidade = image_speed;
+

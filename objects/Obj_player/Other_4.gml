@@ -1,6 +1,11 @@
 var cam = instance_create_layer(x,y,layer,Obj_Camera);
 cam.target = id;
 
+// Força a trava a começar zerada na sala nova para não herdar resquícios do Fade anterior
+global.item_coletado_neste_frame = false;
+
+// Garante que o input do teclado seja limpo ao entrar na sala nova
+io_clear();
 
 // Se as variáveis globais de posição tiverem sido definidas, move o player
 if (variable_global_exists("player_start_x")) {

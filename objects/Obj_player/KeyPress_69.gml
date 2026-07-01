@@ -73,42 +73,19 @@ if (_instancia_porta != noone) {
 
 // [Mantenha o código do puzzle stage 4 / Obj_porta lá em cima como está...]
 
-// =========================================================================
-// PRIORIDADE 1: VERIFICAR SE EXISTE UM ITEM PARA COLETAR
-// =========================================================================
+// Antes de checar as portas, criamos a variável global se ela não existir
+if (!variable_global_exists("item_coletado_neste_frame")) {
+    global.item_coletado_neste_frame = false;
+}
 
-// IMPORTANTE: Substitua 'Obj_movel_parent' pelo objeto real que representa o item no chão 
-// (ex: Obj_tabua, Obj_item_parent, ou o nome exato do objeto que você dropa)
-var _item_perto = instance_place(x, y, Obj_movel_parent); 
-
-if (_item_perto != noone && instance_exists(Obj_inventory)) {
-    // Se o jogador não está a segurar nada, ele VAI coletar o item obrigatoriamente
-    if (Obj_inventory.item_segurando == noone) {
-        
-        with (_item_perto) {
-            // Executa a struct de salvamento no inventário
-            Obj_inventory.item_segurando = {
-                nome: nome_exibicao,
-                id_unico: id_item,
-                objeto_original: object_index,
-                sprite: sprite_index,
-                offset_y: meu_offset_y,
-                som_ao_dropar: som_drop 
-            };
-            
-            // Destrói o item físico do chão
-            instance_destroy();
-        }
-        
-        // Bloqueio Total: Limpa o input e encerra o frame imediatamente!
-        // Nenhuma porta abaixo será processada neste frame.
-        io_clear();
-        exit; 
-    }
+// Se o item foi pego no Step do próprio item, barra as portas imediatamente!
+if (global.item_coletado_neste_frame) {
+    global.item_coletado_neste_frame = false; // Reseta para o próximo frame
+    exit; // Para o código aqui e não deixa entrar em nenhuma porta!
 }
 
 // =========================================================================
-// PRIORIDADE 2: SE NÃO CONSEGUIU PEGAR ITENS, VERIFICA AS PORTAS SIMPLES
+// SE NENHUM ITEM FOI PEGO, COMPORTAMENTO NORMAL DA PORTA SIMPLES:
 // =========================================================================
 
 // Porta simples normal

@@ -39,7 +39,7 @@ if (keyboard_check_pressed(ord("G")) && item_segurando != noone) {
         _drop_y = _checar_y - item_segurando.offset_y;
     }
 
-    // CRIAÇÃO DO ITEM (Usando depth para evitar sumiço)
+   // CRIAÇÃO DO ITEM (Usando depth para evitar sumiço)
     var _novo_item = instance_create_depth(_drop_x, _drop_y, Obj_player.depth + 1, item_segurando.objeto_original);
     
     // TOCAR O SOM ESPECÍFICO
@@ -48,10 +48,19 @@ if (keyboard_check_pressed(ord("G")) && item_segurando != noone) {
         audio_sound_pitch(_som, random_range(0.9, 1.2)); // Varia o tom
     }
     
-    // Devolvemos as variáveis para o objeto físico renascido no chão
-    _novo_item.nome_exibicao = item_segurando.nome;
-    _novo_item.id_item = item_segurando.id_unico;
-    _novo_item.meu_offset_y = item_segurando.offset_y;
+    // Devolvemos absolutamente TODAS as variáveis para o objeto físico renascido no chão
+    _novo_item.nome_exibicao  = item_segurando.nome;
+    _novo_item.id_item        = item_segurando.id_unico;
+    _novo_item.meu_offset_y   = item_segurando.offset_y;
+    _novo_item.som_drop       = item_segurando.som_ao_dropar; // <-- Faltava essa variável!
+    _novo_item.sprite_index   = item_segurando.sprite;        // Garante o visual correto
+    
+    // IMPORTANTE: Se o objeto usa Variable Definitions ou herança,
+    // forçamos o reset da velocidade interna para ele não sumir
+    if (variable_instance_exists(_novo_item, "minha_velocidade")) {
+        _novo_item.minha_velocidade = _novo_item.image_speed;
+    }
 
+    // Esvazia a mão
     item_segurando = noone;
 }

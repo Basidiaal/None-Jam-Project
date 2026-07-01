@@ -28,10 +28,12 @@ if (place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
             offset_y: meu_offset_y,
             som_ao_dropar: som_drop 
         };
-        
+        global.item_coletado_neste_frame= true;
+		io_clear();
         // audio_play_sound(snd_coleta, 1, false);
         instance_destroy(); // Destrói a tábua física do chão pois ela foi para a mão
     } else {
+	
         // Se tentou apertar E mas a mão estava ocupada, limpa o input
         io_clear();
         // Feedback opcional de erro...
