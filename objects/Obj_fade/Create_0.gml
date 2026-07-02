@@ -5,3 +5,6 @@ fade_speed_close = .04
 fade_color = c_black;
 target_room = noone;
 state = "fade_in"; // "fade_in" (escurecendo) ou "fade_out" (clareando)
+
+// ALTERADO: O fade começa esperando a animação do player terminar
+state = "esperando_animacao";

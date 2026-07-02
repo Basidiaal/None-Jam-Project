@@ -16,8 +16,16 @@ if (global.pause) {
 } else {
     image_speed = 1; // Retoma a animação (ou a velocidade que você usa)
 }
+if(sprite_index == Spr_Player_interagindo2){
+	xscale = 1
+}
+if(sprite_index == Spr_Player_interagindo3_1){
+	xscale = 1
+}
 
-
+if(sprite_index == Spr_Player_interagindo3){
+	xscale = 1
+}
 
 
 	// Se a tela do cassino estiver aberta, o player NÃO se mexe

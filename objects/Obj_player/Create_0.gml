@@ -1,4 +1,5 @@
 
+frozen2 = false;
 
 estado = "parado";
 
@@ -23,7 +24,7 @@ velv = 0;
 mass = 1;
 attack = 1;
 
-xscale = -1;
+
 
 mostra_estado = false;
 

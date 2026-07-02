@@ -7,9 +7,26 @@ if (variable_global_exists("item_coletado_neste_frame") && global.item_coletado_
     instance_destroy(); // Destrói o fade IMEDIATAMENTE, cancelando a ida para a outra sala
     exit; // Para o código aqui
 }
+
 if (global.pause) {
     exit; 
 } 
+
+if (state == "esperando_animacao") {
+    if (instance_exists(Obj_player)) {
+        Obj_player.velh = 0;
+        Obj_player.velv = 0;
+        
+        // Se a animação parou (image_speed == 0) ou chegou no último frame:
+        if (Obj_player.image_speed == 0 || Obj_player.image_index >= Obj_player.image_number - 1) {
+            state = "fade_in"; 
+        }
+    } else {
+        state = "fade_in";
+    }
+    exit; 
+}
+// -----------------------------------------
 
 if (state == "fade_in") {
     Obj_player.velh = 0;
