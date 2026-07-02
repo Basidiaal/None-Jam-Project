@@ -18,7 +18,6 @@
     {"name":"inst_2835F0DA","path":"rooms/Sala_corredor_2/Sala_corredor_2.yy",},
     {"name":"inst_1C92B475","path":"rooms/Sala_corredor_2/Sala_corredor_2.yy",},
     {"name":"inst_4BAFBBD0","path":"rooms/Sala_corredor_2/Sala_corredor_2.yy",},
-    {"name":"inst_40A58AB","path":"rooms/Sala_corredor_2/Sala_corredor_2.yy",},
     {"name":"inst_1E4297D6","path":"rooms/Sala_corredor_2/Sala_corredor_2.yy",},
     {"name":"inst_FD3DDF5","path":"rooms/Sala_corredor_2/Sala_corredor_2.yy",},
     {"name":"inst_47849AF6","path":"rooms/Sala_corredor_2/Sala_corredor_2.yy",},
@@ -26,6 +25,7 @@
     {"name":"inst_2814699B","path":"rooms/Sala_corredor_2/Sala_corredor_2.yy",},
     {"name":"inst_268BA814","path":"rooms/Sala_corredor_2/Sala_corredor_2.yy",},
     {"name":"inst_1843295C","path":"rooms/Sala_corredor_2/Sala_corredor_2.yy",},
+    {"name":"inst_29CBABBA","path":"rooms/Sala_corredor_2/Sala_corredor_2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -42,7 +42,6 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_porta_simples","path":"objects/Obj_porta_simples/Obj_porta_simples.yy",},"propertyId":{"name":"target_y_porta_simples","path":"objects/Obj_porta_simples/Obj_porta_simples.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"453",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_porta_simples","path":"objects/Obj_porta_simples/Obj_porta_simples.yy",},"propertyId":{"name":"Sala_destino","path":"objects/Obj_porta_simples/Obj_porta_simples.yy",},"resource":{"name":"Sala_comodo1","path":"rooms/Sala_comodo1/Sala_comodo1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Sala_comodo1",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-1.4666662,"scaleY":1.4881716,"x":232.0,"y":466.39996,},
-        {"$GMRInstance":"v1","%Name":"inst_40A58AB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_40A58AB","objectId":{"name":"Obj_porta_simples","path":"objects/Obj_porta_simples/Obj_porta_simples.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-1.4666662,"scaleY":1.4881716,"x":568.0,"y":466.39996,},
         {"$GMRInstance":"v1","%Name":"inst_1E4297D6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1E4297D6","objectId":{"name":"Obj_porta_lateral_direita","path":"objects/Obj_porta_lateral_direita/Obj_porta_lateral_direita.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_porta_simples","path":"objects/Obj_porta_simples/Obj_porta_simples.yy",},"propertyId":{"name":"Sala_destino","path":"objects/Obj_porta_simples/Obj_porta_simples.yy",},"resource":{"name":"Sala_principal","path":"rooms/Sala_principal/Sala_principal.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Sala_principal",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_porta_simples","path":"objects/Obj_porta_simples/Obj_porta_simples.yy",},"propertyId":{"name":"target_x_porta_simples","path":"objects/Obj_porta_simples/Obj_porta_simples.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"622",},
@@ -50,6 +49,7 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.508333,"scaleY":1.477419,"x":-29.0,"y":314.0,},
         {"$GMRInstance":"v1","%Name":"inst_268BA814","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_268BA814","objectId":{"name":"Obj_teia1","path":"objects/Obj_teia1/Obj_teia1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0864315,"scaleY":1.061746,"x":-15.0,"y":176.0,},
         {"$GMRInstance":"v1","%Name":"inst_1843295C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1843295C","objectId":{"name":"Obj_teia1","path":"objects/Obj_teia1/Obj_teia1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-1.0864315,"scaleY":1.061746,"x":831.0,"y":176.99857,},
+        {"$GMRInstance":"v1","%Name":"inst_29CBABBA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_29CBABBA","objectId":{"name":"Obj_porta_demo","path":"objects/Obj_porta_demo/Obj_porta_demo.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-1.466666,"scaleY":1.488172,"x":568.0,"y":466.4,},
       ],"layers":[],"name":"sensores","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_2BCD0FD_1_1_1_1_1_1","colour":67108863,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2BCD0FD_1_1_1_1_1_1","objectId":{"name":"Obj_Block","path":"objects/Obj_Block/Obj_Block.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":21.78125,"scaleY":1.0,"x":0.0,"y":448.0,},
