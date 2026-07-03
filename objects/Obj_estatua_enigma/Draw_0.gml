@@ -26,6 +26,6 @@ if (_mostrar_prompt) {
         draw_set_color(c_white);
         
         // Desenha o [E] na altura calculada dinamicamente
-        draw_text(x + 51, y - 25, "[E]");
+        draw_text(x + 51, y - 10, "[E]");
     }
 }

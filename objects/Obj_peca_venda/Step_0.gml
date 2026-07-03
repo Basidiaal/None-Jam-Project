@@ -6,7 +6,7 @@ if (global.pause) {
 if (place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
     
     // SÓ PERMITE PEGAR SE O PUZZLE ESTIVER COMPLETO
-   //if (global.puzzle_resolvido == true) {
+   if (global.puzzle_resolvido == true) {
         
         // 2. Só pega se a mão estiver vazia
         if (Obj_inventory.item_segurando == noone) {
@@ -29,4 +29,4 @@ if (place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
             // alarm[0] = 60;
         }
     } 
-//}
+}

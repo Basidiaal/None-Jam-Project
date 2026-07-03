@@ -45,6 +45,7 @@ if (_instancia_porta != noone) {
 
             var _f = instance_create_layer(0, 0, "Instances", Obj_fade);
             _f.target_room = Sala_2; 
+			_f.esperar_animacao = true; // --- ADICIONE ISSO --- (Aqui também vai esperar)
             exit;
         }
 
@@ -108,7 +109,7 @@ if (_porta_comum != noone) {
 
         var _f = instance_create_layer(0, 0, "Instances", Obj_fade);
         _f.target_room = _porta_comum.Sala_destino;
-        
+        _f.esperar_animacao = true; // --- ADICIONE ISSO --- (Aqui também vai esperar)
         io_clear();
         exit;
     }
@@ -131,8 +132,8 @@ if (_porta_comum_2 != noone) {
         // NOTA: x = _porta_comum_2.x removido para não alterar sua posição!
         // NOTA: sprite_index removido para manter a sprite atual (andando ou idle)
 
-        global.player_start_x = _porta_comum_2.target_x_porta_simples;
-        global.player_start_y = _porta_comum_2.target_y_porta_simples;
+        global.player_start_x = _porta_comum_2.target_x;
+        global.player_start_y = _porta_comum_2.target_y;
         global.target_x = 0;
         global.target_y = 0;
 
