@@ -4,5 +4,5 @@ draw_self();
 var _dist = place_meeting(x, y, Obj_player);
 if (_dist && global.puzzle_resolvido == true) {
     draw_set_halign(fa_center);
-    draw_text(x, y - 70, "[E]");
+    draw_text(x, y - 178, "[E]");
 }

@@ -17,3 +17,7 @@ minha_velocidade = image_speed;
 
 // No Create do Objeto Pai dos Itens:
 tempo_espera_drop = 2;
+
+// --- ADICIONE ESTA LINHA ABAIXO ---
+// Frame padrão para a sprite da mão do HUD (0 pode ser o primeiro item ou mão vazia)
+frame_da_mao = 0;
