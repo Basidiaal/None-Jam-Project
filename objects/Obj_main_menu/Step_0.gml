@@ -86,14 +86,23 @@ if (keyboard_check_pressed(vk_enter)) {
     }
 }
 
-// 5. Clique no Ícone de Rede Social
+// 5. Clique nos Ícones de Redes Sociais
 if (mouse_check_button_pressed(mb_left)) {
     var mx = device_mouse_x_to_gui(0);
     var my = device_mouse_y_to_gui(0);
-    var social_x = display_get_gui_width() - 80;
-    var social_y = display_get_gui_height() - 80;
     
-    if (point_in_circle(mx, my, social_x, social_y, 32)) {
-        url_open(social_url);
+    var gui_w = display_get_gui_width();
+    var gui_h = display_get_gui_height();
+    var start_x = gui_w - 60 - (array_length(social_networks) - 1) * 65;
+    var social_y = gui_h - 60;
+    
+    for (var s = 0; s < array_length(social_networks); s++) {
+        var net = social_networks[s];
+        var icon_x = start_x + (s * 65);
+        
+        if (point_in_circle(mx, my, icon_x, social_y, 25)) {
+            url_open(net.url);
+            break;
+        }
     }
 }

@@ -203,19 +203,33 @@ if (room == rm_main_menu) {
         }
     }
 
-    // 3. DESENHO DO ÍCONE DE REDE SOCIAL
-    var social_x = gui_w - 80;
-    var social_y = gui_h - 80;
+    // 3. DESENHO DOS ÍCONES DE REDES SOCIAIS (Instagram, X, TikTok)
+    var start_x = gui_w - 60 - (array_length(social_networks) - 1) * 65;
+    var social_y = gui_h - 60;
     var mx = device_mouse_x_to_gui(0);
     var my = device_mouse_y_to_gui(0);
-    var social_scale = 1;
-
-    if (point_in_circle(mx, my, social_x, social_y, 32)) {
-        social_scale = 1.2;
+    
+    var hovered_name = "";
+    
+    for (var s = 0; s < array_length(social_networks); s++) {
+        var net = social_networks[s];
+        var icon_x = start_x + (s * 65);
+        var icon_scale = 1.0;
+        
+        if (point_in_circle(mx, my, icon_x, social_y, 25)) {
+            icon_scale = 1.2;
+            hovered_name = net.name;
+        }
+        
+        draw_sprite_ext(net.sprite, 0, icon_x, social_y, icon_scale, icon_scale, 0, c_white, 1);
+    }
+    
+    // Desenha o texto de hover à esquerda dos ícones se houver um selecionado
+    if (hovered_name != "") {
         draw_set_color(c_white);
         draw_set_halign(fa_right);
-        draw_text(social_x - 40, social_y, "Siga-nos!");
+        draw_set_valign(fa_middle);
+        draw_set_font(Fnt_puzzle_portas);
+        draw_text(start_x - 30, social_y, hovered_name);
     }
-
-    draw_sprite_ext(social_sprite, 0, social_x, social_y, social_scale, social_scale, 0, c_white, 1);
 }

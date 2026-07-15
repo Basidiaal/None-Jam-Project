@@ -85,6 +85,9 @@
   },
   "name":"None-Jam-Project",
   "resources":[
+    {"id":{"name":"Spr_x","path":"sprites/Spr_x/Spr_x.yy",},},
+    {"id":{"name":"Spr_tiktok","path":"sprites/Spr_tiktok/Spr_tiktok.yy",},},
+
     {"id":{"name":"Fnt_puzzle_portas","path":"fonts/Fnt_puzzle_portas/Fnt_puzzle_portas.yy",},},
     {"id":{"name":"Obj_abajur","path":"objects/Obj_abajur/Obj_abajur.yy",},},
     {"id":{"name":"Obj_banquinho","path":"objects/Obj_banquinho/Obj_banquinho.yy",},},

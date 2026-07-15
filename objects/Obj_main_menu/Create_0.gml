@@ -16,9 +16,12 @@ options_settings = ["Resolução", "Tela Cheia", "Volume Geral", "Música", "Efe
 langs = ["Português", "English", "Español"];
 
 
-// Configuração da Rede Social (YouTube)
-social_sprite = Spr_instagram; // Substitua pelo seu sprite
-social_url = "https://www.instagram.com/exemplo_redesocial";
+// Configuração das Redes Sociais
+social_networks = [
+    { sprite: Spr_instagram, url: "https://www.instagram.com/exemplo_redesocial", name: "Instagram: @exemplo_redesocial" },
+    { sprite: Spr_x,         url: "https://x.com/exemplo_redesocial",         name: "X: @exemplo_redesocial" },
+    { sprite: Spr_tiktok,    url: "https://www.tiktok.com/@exemplo_redesocial", name: "TikTok: @exemplo_redesocial" }
+];
 
 
 
