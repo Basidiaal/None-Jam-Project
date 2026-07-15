@@ -63,8 +63,8 @@
     "playbackSpeedType": 0,
     "resourceType": "GMSequence",
     "resourceVersion": "2.0",
-    "showBackdrop": True,
-    "showBackdropImage": False,
+    "showBackdrop": true,
+    "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
