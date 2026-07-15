@@ -56,14 +56,25 @@ if (room == rm_main_menu) {
         var col_y = line_y + 40;
         var col_w = (card_x2 - card_x1 - 120) / 2;
         
-        // Coluna 1: Desenvolvimento
-        var col1_x = card_x1 + 50;
+        // Coluna 1: Desenvolvimento (deslocada para a direita para dar espaço ao personagem)
+        var col1_x = card_x1 + 135;
         draw_set_halign(fa_left);
         draw_set_color(make_color_rgb(180, 180, 180));
         draw_text(col1_x, col_y, texto_desenvolvimento[lang_index]);
         
         draw_set_color(c_white);
-        draw_text_ext(col1_x, col_y + 60, texto_equipe[lang_index], -1, col_w);
+        draw_text_ext(col1_x, col_y + 60, texto_equipe[lang_index], -1, col_w - 85);
+        
+        // --- PERSONAGEM ESTÁTICO (IDLE) AO LADO DO TEXTO ---
+        var px = card_x1 + 85;
+        var py = col_y + 360; 
+        
+        var p_sprite = Spr_Player_idle;
+        var p_frames = sprite_get_number(p_sprite);
+        var p_frame = (current_time / 120) % p_frames;
+        
+        // Desenha o personagem na animação padrão (idle)
+        draw_sprite_ext(p_sprite, p_frame, px, py, 4, 4, 0, c_white, 1.0);
         
         // Coluna 2: Redes Sociais
         var col2_x = card_x1 + 70 + col_w;
