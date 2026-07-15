@@ -20,7 +20,8 @@ langs = ["Português", "English", "Español"];
 social_networks = [
     { sprite: Spr_instagram, url: "https://www.instagram.com/exemplo_redesocial", name: "Instagram: @exemplo_redesocial" },
     { sprite: Spr_x,         url: "https://x.com/exemplo_redesocial",         name: "X: @exemplo_redesocial" },
-    { sprite: Spr_tiktok,    url: "https://www.tiktok.com/@exemplo_redesocial", name: "TikTok: @exemplo_redesocial" }
+    { sprite: Spr_tiktok,    url: "https://www.tiktok.com/@exemplo_redesocial", name: "TikTok: @exemplo_redesocial" },
+    { sprite: Spr_youtube,   url: "https://www.youtube.com/@exemplo_redesocial", name: "YouTube: @exemplo_redesocial" }
 ];
 
 

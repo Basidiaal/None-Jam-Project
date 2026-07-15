@@ -85,6 +85,8 @@
   },
   "name":"None-Jam-Project",
   "resources":[
+    {"id":{"name":"Spr_youtube","path":"sprites/Spr_youtube/Spr_youtube.yy",},},
+
     {"id":{"name":"Spr_x","path":"sprites/Spr_x/Spr_x.yy",},},
     {"id":{"name":"Spr_tiktok","path":"sprites/Spr_tiktok/Spr_tiktok.yy",},},
 
