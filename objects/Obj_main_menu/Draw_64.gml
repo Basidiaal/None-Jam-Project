@@ -10,6 +10,75 @@ if (room == rm_main_menu) {
 
     draw_set_valign(fa_middle);
 
+    // --- DESIGN MODERNO DA TELA DE CRÉDITOS ---
+    if (menu_state == "credits") {
+        var card_x1 = gui_w * 0.38;
+        var card_y1 = gui_h * 0.12;
+        var card_x2 = gui_w * 0.92;
+        var card_y2 = gui_h * 0.88;
+        
+        // 1. Fundo do Card (Vidro Escuro com Transparência)
+        draw_set_alpha(0.85);
+        draw_set_color(c_black);
+        draw_roundrect_ext(card_x1, card_y1, card_x2, card_y2, 20, 20, false);
+        
+        // 2. Borda do Card (Branca Sutil)
+        draw_set_alpha(0.2);
+        draw_set_color(c_white);
+        draw_roundrect_ext(card_x1, card_y1, card_x2, card_y2, 20, 20, true);
+        
+        // Borda Extra de Brilho
+        draw_set_alpha(0.05);
+        draw_roundrect_ext(card_x1 - 2, card_y1 - 2, card_x2 + 2, card_y2 + 2, 24, 24, true);
+        draw_set_alpha(1.0);
+        
+        // 3. Textos e Conteúdo
+        // Título Principal
+        draw_set_halign(fa_center);
+        draw_set_valign(fa_top);
+        draw_set_color(c_white);
+        var title_y = card_y1 + 40;
+        draw_text_transformed(card_x1 + (card_x2 - card_x1)/2, title_y, texto_creditos[lang_index], 1.3, 1.3, 0);
+        
+        // Agradecimento Especial (Cor Verde Neon)
+        draw_set_color(make_color_rgb(0, 255, 180));
+        var thank_y = title_y + 60;
+        draw_text(card_x1 + (card_x2 - card_x1)/2, thank_y, texto_agradecimento[lang_index]);
+        
+        // Linha Divisória
+        draw_set_color(c_white);
+        draw_set_alpha(0.15);
+        var line_y = thank_y + 50;
+        draw_line_width(card_x1 + 40, line_y, card_x2 - 40, line_y, 2);
+        draw_set_alpha(1.0);
+        
+        // Colunas
+        var col_y = line_y + 40;
+        var col_w = (card_x2 - card_x1 - 120) / 2;
+        
+        // Coluna 1: Desenvolvimento
+        var col1_x = card_x1 + 50;
+        draw_set_halign(fa_left);
+        draw_set_color(make_color_rgb(180, 180, 180));
+        draw_text(col1_x, col_y, texto_desenvolvimento[lang_index]);
+        
+        draw_set_color(c_white);
+        draw_text_ext(col1_x, col_y + 60, texto_equipe[lang_index], -1, col_w);
+        
+        // Coluna 2: Redes Sociais
+        var col2_x = card_x1 + 70 + col_w;
+        draw_set_halign(fa_left);
+        draw_set_color(make_color_rgb(180, 180, 180));
+        draw_text(col2_x, col_y, texto_redes[lang_index]);
+        
+        draw_set_color(c_white);
+        draw_text_ext(col2_x, col_y + 60, texto_siga[lang_index], -1, col_w - 20);
+        
+        // Restaurar alinhamentos padrão para o loop de opções
+        draw_set_valign(fa_middle);
+        draw_set_halign(fa_left);
+    }
+
     // 2. Loop de Desenho das Opções
     for (var i = 0; i < array_length(options); i++) {
         var yy = 350 + (i * 60); 

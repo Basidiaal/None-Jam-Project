@@ -223,5 +223,25 @@ sprite_texto[0] = Spr_documento_gui;
 sprite_texto[1] = Spr_documento_gui_1;
 sprite_texto[2] = Spr_documento_gui_2;
 
-// ... e assim por diante para Créditos, Sair, Voltar, etc.
+// Textos da Tela de Créditos
+texto_agradecimento[0] = "Muito obrigado por jogar o nosso jogo!";
+texto_agradecimento[1] = "Thank you so much for playing our game!";
+texto_agradecimento[2] = "¡Muchas gracias por jugar a nuestro juego!";
+
+texto_desenvolvimento[0] = "DESENVOLVIMENTO";
+texto_desenvolvimento[1] = "DEVELOPMENT";
+texto_desenvolvimento[2] = "DESARROLLO";
+
+texto_equipe[0] = "Equipe do Projeto:\n  - Stephany";
+texto_equipe[1] = "Project Team:\n  - Stephany";
+texto_equipe[2] = "Equipo del Proyecto:\n  - Stephany";
+
+texto_redes[0] = "REDES SOCIAIS";
+texto_redes[1] = "SOCIAL MEDIA";
+texto_redes[2] = "REDES SOCIALES";
+
+texto_siga[0] = "Siga nosso Instagram para novidades:\n  @stephanyy_ppz\n\nFique ligado nos próximos capítulos!";
+texto_siga[1] = "Follow our Instagram for updates:\n  @stephanyy_ppz\n\nStay tuned for the next chapters!";
+texto_siga[2] = "Sigue nuestro Instagram para novedades:\n  @stephanyy_ppz\n\n¡Estad atentos a los próximos capítulos!";
+
 Scr_atualizar_textos()

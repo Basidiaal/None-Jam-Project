@@ -54,6 +54,18 @@ Network Trash Folder
 Temporary Items
 .apdisk
  
-# GameMaker temporary files
+# GameMaker Studio 2 Specifics
 *.resource_order
 *.old
+*.yy.user
+*.yy.user.*
+/cache/
+/export/
+/local_cache/
+/tmp/
+.kombai/
+
+# Game-generated save and meta files
+checkpoint
+save_meta.ini
+save_data.ini
