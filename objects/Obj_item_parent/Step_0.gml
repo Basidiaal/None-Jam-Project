@@ -18,7 +18,8 @@ if (place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
             objeto_original: object_index,
             sprite: sprite_index,
             offset_y: meu_offset_y,
-            som_ao_dropar: som_drop 
+            som_ao_dropar: som_drop,
+			frame_da_mao: frame_da_mao
         };
         
         // audio_play_sound(snd_coleta, 1, false);

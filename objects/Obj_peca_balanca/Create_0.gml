@@ -1,4 +1,5 @@
 event_inherited();
+frame_da_mao = 2;
 nome_exibicao = "Balança";
 id_item = "peca_braco";
 //som_drop = snd_drop_pedra;

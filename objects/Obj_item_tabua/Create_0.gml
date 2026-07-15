@@ -1,6 +1,6 @@
 // 1. Garante que ele puxe qualquer código padrão que esteja no Create do pai
 event_inherited(); 
-
+frame_da_mao = 0;
 // 2. Configura as informações exclusivas deste item
 nome_exibicao = "Tábua"; // O texto que vai aparecer na GUI do inventário
 id_item = "tabua";                 // IMPORTANTE: Tem que ser EXATAMENTE igual ao "id_necessario" da escada
