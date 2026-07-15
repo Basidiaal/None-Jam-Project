@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Spr_papeis_de_parede",
   "bboxMode":0,
   "bbox_bottom":409,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"01140aff-d1aa-4e6c-8dc3-f10f94d9ddae","name":"01140aff-d1aa-4e6c-8dc3-f10f94d9ddae","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"01140aff-d1aa-4e6c-8dc3-f10f94d9ddae","name":"01140aff-d1aa-4e6c-8dc3-f10f94d9ddae","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -32,7 +32,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Spr_papeis_de_parede",
     "autoRecord":true,
     "backdropHeight":768,

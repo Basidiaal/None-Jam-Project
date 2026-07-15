@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Spr_porao",
   "bboxMode":0,
   "bbox_bottom":422,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"de0942e5-d225-4443-b28c-4d9134479535","name":"de0942e5-d225-4443-b28c-4d9134479535","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"de0942e5-d225-4443-b28c-4d9134479535","name":"de0942e5-d225-4443-b28c-4d9134479535","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -32,7 +32,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Spr_porao",
     "autoRecord":true,
     "backdropHeight":768,

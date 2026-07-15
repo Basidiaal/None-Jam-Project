@@ -6,84 +6,81 @@ if (room == rm_main_menu) {
     // 1. Identifica qual lista de opções usar
     var options = options_main;
     if (menu_state == "settings") options = options_settings;
-    if (menu_state == "credits") options = ["VOLTAR"];
+    if (menu_state == "credits") options = [];
 
     draw_set_valign(fa_middle);
 
-    // --- DESIGN MODERNO DA TELA DE CRÉDITOS ---
+    // --- DESIGN MODERNO DA TELA DE CRÉDITOS (SCROLLING CREDITS) ---
     if (menu_state == "credits") {
-        var card_x1 = gui_w * 0.38;
-        var card_y1 = gui_h * 0.12;
-        var card_x2 = gui_w * 0.92;
-        var card_y2 = gui_h * 0.88;
-        
-        // 1. Fundo do Card (Vidro Escuro com Transparência)
-        draw_set_alpha(0.85);
+        // 1. Cobertura Preta em Tela Cheia (100% opaca)
+        draw_set_alpha(1.0);
         draw_set_color(c_black);
-        draw_roundrect_ext(card_x1, card_y1, card_x2, card_y2, 20, 20, false);
+        draw_rectangle(0, 0, gui_w, gui_h, false);
         
-        // 2. Borda do Card (Branca Sutil)
-        draw_set_alpha(0.2);
-        draw_set_color(c_white);
-        draw_roundrect_ext(card_x1, card_y1, card_x2, card_y2, 20, 20, true);
+        // 2. Desenhar os créditos a partir de credits_scroll_y
+        var current_y = credits_scroll_y;
+        var list = credits_list[lang_index];
         
-        // Borda Extra de Brilho
-        draw_set_alpha(0.05);
-        draw_roundrect_ext(card_x1 - 2, card_y1 - 2, card_x2 + 2, card_y2 + 2, 24, 24, true);
-        draw_set_alpha(1.0);
+        for (var j = 0; j < array_length(list); j++) {
+            var item = list[j];
+            
+            // Só desenha se estiver visível na tela (otimização)
+            if (current_y > -200 && current_y < gui_h + 200) {
+                if (item.type == "logo") {
+                    draw_set_font(Fnt_puzzle_portas);
+                    draw_set_halign(fa_center);
+                    draw_set_valign(fa_top);
+                    draw_set_color(c_white);
+                    // Desenha o logo "ESC_" limpo usando a própria fonte do jogo
+                    draw_text_transformed(gui_w / 2, current_y, "ESC_", 3.0, 3.0, 0);
+                }
+                else if (item.type == "header") {
+                    draw_set_font(Fnt_puzzle_portas);
+                    draw_set_halign(fa_center);
+                    draw_set_valign(fa_top);
+                    draw_set_color(make_color_rgb(0, 255, 180)); // Verde Neon / Ciano para Título da Seção
+                    draw_text_transformed(gui_w / 2, current_y, item.text, 1.2, 1.2, 0);
+                }
+                else if (item.type == "role") {
+                    draw_set_font(Fnt_puzzle_portas);
+                    draw_set_valign(fa_top);
+                    
+                    // Nome do profissional (Negrito/Branco, à esquerda do centro)
+                    draw_set_halign(fa_right);
+                    draw_set_color(c_white);
+                    draw_text(gui_w / 2 - 15, current_y, item.name);
+                    
+                    // Cargo/Função (Cinza, à direita do centro)
+                    draw_set_halign(fa_left);
+                    draw_set_color(make_color_rgb(160, 160, 160));
+                    draw_text(gui_w / 2 + 15, current_y, item.title);
+                }
+                else if (item.type == "thanks") {
+                    draw_set_font(Fnt_puzzle_portas);
+                    draw_set_halign(fa_center);
+                    draw_set_valign(fa_top);
+                    draw_set_color(c_white);
+                    draw_text(gui_w / 2, current_y, item.text);
+                }
+            }
+            
+            // Incrementa o Y para o próximo item
+            if (item.type == "logo") current_y += 130;
+            else if (item.type == "header") current_y += 55;
+            else if (item.type == "role") current_y += 42;
+            else if (item.type == "space") current_y += item.val;
+            else if (item.type == "thanks") current_y += 50;
+        }
         
-        // 3. Textos e Conteúdo
-        // Título Principal
-        draw_set_halign(fa_center);
+        // Dica de saída por ESC estacionária no canto superior direito
+        draw_set_font(Fnt_puzzle_portas);
+        draw_set_halign(fa_right);
         draw_set_valign(fa_top);
-        draw_set_color(c_white);
-        var title_y = card_y1 + 40;
-        draw_text_transformed(card_x1 + (card_x2 - card_x1)/2, title_y, texto_creditos[lang_index], 1.3, 1.3, 0);
-        
-        // Agradecimento Especial (Cor Verde Neon)
-        draw_set_color(make_color_rgb(0, 255, 180));
-        var thank_y = title_y + 60;
-        draw_text(card_x1 + (card_x2 - card_x1)/2, thank_y, texto_agradecimento[lang_index]);
-        
-        // Linha Divisória
-        draw_set_color(c_white);
-        draw_set_alpha(0.15);
-        var line_y = thank_y + 50;
-        draw_line_width(card_x1 + 40, line_y, card_x2 - 40, line_y, 2);
-        draw_set_alpha(1.0);
-        
-        // Colunas
-        var col_y = line_y + 40;
-        var col_w = (card_x2 - card_x1 - 120) / 2;
-        
-        // Coluna 1: Desenvolvimento (deslocada para a direita para dar espaço ao personagem)
-        var col1_x = card_x1 + 135;
-        draw_set_halign(fa_left);
-        draw_set_color(make_color_rgb(180, 180, 180));
-        draw_text(col1_x, col_y, texto_desenvolvimento[lang_index]);
-        
-        draw_set_color(c_white);
-        draw_text_ext(col1_x, col_y + 60, texto_equipe[lang_index], -1, col_w - 85);
-        
-        // --- PERSONAGEM ESTÁTICO (IDLE) AO LADO DO TEXTO ---
-        var px = card_x1 + 85;
-        var py = col_y + 360; 
-        
-        var p_sprite = Spr_Player_idle;
-        var p_frames = sprite_get_number(p_sprite);
-        var p_frame = (current_time / 120) % p_frames;
-        
-        // Desenha o personagem na animação padrão (idle)
-        draw_sprite_ext(p_sprite, p_frame, px, py, 4, 4, 0, c_white, 1.0);
-        
-        // Coluna 2: Redes Sociais
-        var col2_x = card_x1 + 70 + col_w;
-        draw_set_halign(fa_left);
-        draw_set_color(make_color_rgb(180, 180, 180));
-        draw_text(col2_x, col_y, texto_redes[lang_index]);
-        
-        draw_set_color(c_white);
-        draw_text_ext(col2_x, col_y + 60, texto_siga[lang_index], -1, col_w - 20);
+        draw_set_color(make_color_rgb(100, 100, 100)); // cinza discreto
+        var esc_txt = "[ESC] Voltar";
+        if (lang_index == 1) esc_txt = "[ESC] Back";
+        else if (lang_index == 2) esc_txt = "[ESC] Volver";
+        draw_text(gui_w - 45, 35, esc_txt);
         
         // Restaurar alinhamentos padrão para o loop de opções
         draw_set_valign(fa_middle);

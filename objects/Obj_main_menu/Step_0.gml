@@ -1,5 +1,23 @@
 if (room != rm_main_menu) exit; // Se não for a sala do menu, ignora o resto do código
 
+// Controle de Créditos Rolantes
+if (menu_state == "credits") {
+    credits_scroll_y -= 1.5;
+    
+    // Volta se passar muito da tela
+    if (credits_scroll_y < -1200) {
+        menu_state = "main";
+        index = 3;
+    }
+    
+    // Volta ao pressionar ESC ou botão do mouse
+    if (keyboard_check_pressed(vk_escape) || mouse_check_button_pressed(mb_any)) {
+        menu_state = "main";
+        index = 3;
+    }
+    exit;
+}
+
 // 1. Identificar qual menu estamos olhando
 var options = options_main;
 if (menu_state == "settings") options = options_settings;
@@ -53,7 +71,12 @@ if (keyboard_check_pressed(vk_enter)) {
         switch(index) {
             case 0: room_goto(Sala_principal); break;
             case 2: menu_state = "settings"; index = 0; break;
-            case 3: menu_state = "credits"; index = 0; break;
+            case 3: 
+                menu_state = "credits"; 
+                index = 0; 
+                credits_scroll_y = display_get_gui_height();
+                keyboard_clear(vk_enter);
+                break;
             case 4: game_end(); break;
         }
     } else if (menu_state == "settings" && index == 5) {

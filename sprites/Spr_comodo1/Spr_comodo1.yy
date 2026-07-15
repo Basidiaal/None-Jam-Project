@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Spr_comodo1",
   "bboxMode":0,
   "bbox_bottom":424,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a3621ab6-f6b6-4a7a-b552-5cdd3f24960e","name":"a3621ab6-f6b6-4a7a-b552-5cdd3f24960e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a3621ab6-f6b6-4a7a-b552-5cdd3f24960e","name":"a3621ab6-f6b6-4a7a-b552-5cdd3f24960e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -32,7 +32,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Spr_comodo1",
     "autoRecord":true,
     "backdropHeight":768,

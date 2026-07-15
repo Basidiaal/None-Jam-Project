@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Spr_sujeira_porao",
   "bboxMode":0,
   "bbox_bottom":687,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"62a93e96-66dc-4b1b-bcb9-a903e2927a1c","name":"62a93e96-66dc-4b1b-bcb9-a903e2927a1c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"62a93e96-66dc-4b1b-bcb9-a903e2927a1c","name":"62a93e96-66dc-4b1b-bcb9-a903e2927a1c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -32,7 +32,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Spr_sujeira_porao",
     "autoRecord":true,
     "backdropHeight":768,

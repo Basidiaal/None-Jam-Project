@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Sprite103_1",
   "bboxMode":0,
   "bbox_bottom":420,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f9710afe-5b49-42dd-a825-5d711492d553","name":"f9710afe-5b49-42dd-a825-5d711492d553","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f9710afe-5b49-42dd-a825-5d711492d553","name":"f9710afe-5b49-42dd-a825-5d711492d553","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -32,7 +32,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Sprite103",
     "autoRecord":true,
     "backdropHeight":768,

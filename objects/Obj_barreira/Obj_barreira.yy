@@ -27,9 +27,9 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"vel_subida","filters":[],"listItems":[],"multiselect":false,"name":"vel_subida","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1.5","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"vel_descida","filters":[],"listItems":[],"multiselect":false,"name":"vel_descida","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1.5","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"altura_pixels","filters":[],"listItems":[],"multiselect":false,"name":"altura_pixels","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"90","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"vel_subida","filters":[],"listItems":[],"multiselect":false,"name":"vel_subida","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1.5","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"vel_descida","filters":[],"listItems":[],"multiselect":false,"name":"vel_descida","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1.5","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"altura_pixels","filters":[],"listItems":[],"multiselect":false,"name":"altura_pixels","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"90","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

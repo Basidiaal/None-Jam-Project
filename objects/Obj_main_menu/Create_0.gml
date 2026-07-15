@@ -6,6 +6,7 @@ if (instance_number(object_index) > 1) {
 // Controle de Navegação
 index = 0;
 menu_state = "main"; // Estados: "main", "settings", "credits"
+credits_scroll_y = 0;
 
 // Listas de Opções
 options_main = ["Iniciar Jogo", "Idioma", "Configurações", "Créditos", "Sair"];
@@ -17,7 +18,7 @@ langs = ["Português", "English", "Español"];
 
 // Configuração da Rede Social (YouTube)
 social_sprite = Spr_instagram; // Substitua pelo seu sprite
-social_url = "https://www.instagram.com/stephanyy_ppz?igsh=MXV0c282M2tjdDdhNg==";
+social_url = "https://www.instagram.com/exemplo_redesocial";
 
 
 
@@ -223,25 +224,86 @@ sprite_texto[0] = Spr_documento_gui;
 sprite_texto[1] = Spr_documento_gui_1;
 sprite_texto[2] = Spr_documento_gui_2;
 
-// Textos da Tela de Créditos
-texto_agradecimento[0] = "Muito obrigado por jogar o nosso jogo!";
-texto_agradecimento[1] = "Thank you so much for playing our game!";
-texto_agradecimento[2] = "¡Muchas gracias por jugar a nuestro juego!";
+// Listas de Créditos Localizadas e Estruturadas (com nomes de exemplo)
+credits_list[0] = [
+    { type: "logo", text: "ESC_" },
+    { type: "space", val: 80 },
+    { type: "header", text: "EQUIPE DE DESENVOLVIMENTO" },
+    { type: "space", val: 30 },
+    { type: "role", title: "Design do Jogo", name: "Exemplo 1" },
+    { type: "role", title: "Programação", name: "Exemplo 2" },
+    { type: "role", title: "Design de Puzzles", name: "Exemplo 3" },
+    { type: "space", val: 50 },
+    { type: "header", text: "ARTE E ANIMAÇÃO" },
+    { type: "space", val: 30 },
+    { type: "role", title: "Direção de Arte", name: "Exemplo 4" },
+    { type: "role", title: "Animação de Sprites", name: "Exemplo 5" },
+    { type: "space", val: 50 },
+    { type: "header", text: "SOM E MÚSICA" },
+    { type: "space", val: 30 },
+    { type: "role", title: "Trilha Sonora", name: "Exemplo 6" },
+    { type: "role", title: "Efeitos Sonoros", name: "Exemplo 7" },
+    { type: "space", val: 50 },
+    { type: "header", text: "PUBLISHER / PARCERIA" },
+    { type: "space", val: 30 },
+    { type: "role", title: "Co-Produtor / Parceiro", name: "Exemplo 8" },
+    { type: "space", val: 80 },
+    { type: "thanks", text: "Muito obrigado por jogar o nosso jogo!" },
+    { type: "thanks", text: "Siga-nos no Instagram: @exemplo_redesocial" }
+];
 
-texto_desenvolvimento[0] = "DESENVOLVIMENTO";
-texto_desenvolvimento[1] = "DEVELOPMENT";
-texto_desenvolvimento[2] = "DESARROLLO";
+credits_list[1] = [
+    { type: "logo", text: "ESC_" },
+    { type: "space", val: 80 },
+    { type: "header", text: "DEVELOPMENT TEAM" },
+    { type: "space", val: 30 },
+    { type: "role", title: "Game Design", name: "Example 1" },
+    { type: "role", title: "Programming", name: "Example 2" },
+    { type: "role", title: "Puzzle Design", name: "Example 3" },
+    { type: "space", val: 50 },
+    { type: "header", text: "ART & ANIMATION" },
+    { type: "space", val: 30 },
+    { type: "role", title: "Art Direction", name: "Example 4" },
+    { type: "role", title: "Sprite Animation", name: "Example 5" },
+    { type: "space", val: 50 },
+    { type: "header", text: "SOUND & MUSIC" },
+    { type: "space", val: 30 },
+    { type: "role", title: "Composer", name: "Example 6" },
+    { type: "role", title: "Sound Designer", name: "Example 7" },
+    { type: "space", val: 50 },
+    { type: "header", text: "PUBLISHER / PARTNER" },
+    { type: "space", val: 30 },
+    { type: "role", title: "Co-Producer / Partner", name: "Example 8" },
+    { type: "space", val: 80 },
+    { type: "thanks", text: "Thank you so much for playing our game!" },
+    { type: "thanks", text: "Follow us on Instagram: @exemplo_redesocial" }
+];
 
-texto_equipe[0] = "Equipe do Projeto:\n  - Stephany";
-texto_equipe[1] = "Project Team:\n  - Stephany";
-texto_equipe[2] = "Equipo del Proyecto:\n  - Stephany";
-
-texto_redes[0] = "REDES SOCIAIS";
-texto_redes[1] = "SOCIAL MEDIA";
-texto_redes[2] = "REDES SOCIALES";
-
-texto_siga[0] = "Siga nosso Instagram para novidades:\n  @stephanyy_ppz\n\nFique ligado nos próximos capítulos!";
-texto_siga[1] = "Follow our Instagram for updates:\n  @stephanyy_ppz\n\nStay tuned for the next chapters!";
-texto_siga[2] = "Sigue nuestro Instagram para novedades:\n  @stephanyy_ppz\n\n¡Estad atentos a los próximos capítulos!";
+credits_list[2] = [
+    { type: "logo", text: "ESC_" },
+    { type: "space", val: 80 },
+    { type: "header", text: "EQUIPO DE DESARROLLO" },
+    { type: "space", val: 30 },
+    { type: "role", title: "Diseño del Juego", name: "Ejemplo 1" },
+    { type: "role", title: "Programación", name: "Ejemplo 2" },
+    { type: "role", title: "Diseño de Puzzles", name: "Ejemplo 3" },
+    { type: "space", val: 50 },
+    { type: "header", text: "ARTE Y ANIMACIÓN" },
+    { type: "space", val: 30 },
+    { type: "role", title: "Dirección de Arte", name: "Ejemplo 4" },
+    { type: "role", title: "Animación de Sprites", name: "Ejemplo 5" },
+    { type: "space", val: 50 },
+    { type: "header", text: "SONIDO Y MÚSICA" },
+    { type: "space", val: 30 },
+    { type: "role", title: "Compositor", name: "Ejemplo 6" },
+    { type: "role", title: "Efectos de Sonido", name: "Ejemplo 7" },
+    { type: "space", val: 50 },
+    { type: "header", text: "EDITORIAL / SOCIO" },
+    { type: "space", val: 30 },
+    { type: "role", title: "Co-Productor / Socio", name: "Ejemplo 8" },
+    { type: "space", val: 80 },
+    { type: "thanks", text: "¡Muchas gracias por jugar a nuestro juego!" },
+    { type: "thanks", text: "Síguenos en Instagram: @exemplo_redesocial" }
+];
 
 Scr_atualizar_textos()
