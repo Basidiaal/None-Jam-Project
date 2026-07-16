@@ -243,8 +243,6 @@
     {"id":{"name":"Snd_Passos_Escada","path":"sounds/Snd_Passos_Escada/Snd_Passos_Escada.yy",},},
     {"id":{"name":"Snd_pintura_subindo","path":"sounds/Snd_pintura_subindo/Snd_pintura_subindo.yy",},},
     {"id":{"name":"Snd_rewind","path":"sounds/Snd_rewind/Snd_rewind.yy",},},
-    {"id":{"name":"som_geral","path":"sounds/som_geral/som_geral.yy",},},
-    {"id":{"name":"Sons","path":"sounds/Sons/Sons.yy",},},
     {"id":{"name":"Spr_abajur","path":"sprites/Spr_abajur/Spr_abajur.yy",},},
     {"id":{"name":"Spr_banquinho","path":"sprites/Spr_banquinho/Spr_banquinho.yy",},},
     {"id":{"name":"Spr_barreira_parte_superior","path":"sprites/Spr_barreira_parte_superior/Spr_barreira_parte_superior.yy",},},
