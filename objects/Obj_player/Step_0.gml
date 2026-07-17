@@ -17,8 +17,32 @@ if (global.pause) {
     image_speed = 1; // Retoma a animação (ou a velocidade que você usa)
 }
 if(sprite_index == Spr_Player_interagindo2){
-	xscale = 1
+	velh = 0;
+	// Quando a animação terminar, volta ao estado normal
+	if (image_index >= image_number - 1) {
+		sprite_index = Spr_Player_idle;
+		estado = "parado";
+	}
 }
+
+if(sprite_index == Spr_Player_interagindo1){
+	velh = 0;
+	// Quando a animação terminar, volta ao estado normal
+	if (image_index >= image_number - 1) {
+		sprite_index = Spr_Player_idle;
+		estado = "parado";
+	}
+}
+
+if(sprite_index == Spr_Player_pegar_chao){
+	velh = 0;
+	// Quando a animação terminar, volta ao estado normal
+	if (image_index >= image_number - 1) {
+		sprite_index = Spr_Player_idle;
+		estado = "parado";
+	}
+}
+
 if(sprite_index == Spr_Player_interagindo3_1){
 	xscale = 1
 }
@@ -82,6 +106,11 @@ if(dash_timer > 0) dash_timer--;
 //codigo de movimentação
 velh = (right - left) * max_velh
 
+// Se estiver tocando animação de interação, zera a movimentação e impede mudança de estado
+if (sprite_index == Spr_Player_pegar_chao || sprite_index == Spr_Player_interagindo2 || sprite_index == Spr_Player_interagindo1) {
+    velh = 0;
+}
+
 if(right and left)
 	{
 	estado = "parado"
@@ -95,7 +124,9 @@ switch(estado)
 	case "parado":
 	{
 	//comportamento do estado
-	sprite_index = Spr_Player_idle;
+	if (sprite_index != Spr_Player_pegar_chao && sprite_index != Spr_Player_interagindo2 && sprite_index != Spr_Player_interagindo1) {
+	    sprite_index = Spr_Player_idle;
+	}
 	
 	//troca de estado:movendo
 	if (right && !place_meeting(x + 1, y, Obj_Block)) {
@@ -124,8 +155,9 @@ switch(estado)
 	#region movendo
 	case "movendo":
 	{
-		sprite_index = Spr_Player_walking;
-		
+		if (sprite_index != Spr_Player_pegar_chao && sprite_index != Spr_Player_interagindo2 && sprite_index != Spr_Player_interagindo1) {
+			sprite_index = Spr_Player_walking;
+		}
 		
 		//troca de estado:parado
 		if(abs(velh) < .1){

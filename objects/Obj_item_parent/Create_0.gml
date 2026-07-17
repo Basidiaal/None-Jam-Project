@@ -21,3 +21,6 @@ tempo_espera_drop = 2;
 // --- ADICIONE ESTA LINHA ABAIXO ---
 // Frame padrão para a sprite da mão do HUD (0 pode ser o primeiro item ou mão vazia)
 frame_da_mao = 0;
+
+// A animação de coleta é decidida automaticamente no Step
+// baseada na altura Y do item em relação ao jogador.

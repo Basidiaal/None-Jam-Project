@@ -69,11 +69,13 @@
     {"name":"inst_2103BB7E","path":"rooms/Sala_principal/Sala_principal.yy",},
     {"name":"inst_6EB9401E","path":"rooms/Sala_principal/Sala_principal.yy",},
     {"name":"inst_2616B39","path":"rooms/Sala_principal/Sala_principal.yy",},
+    {"name":"inst_57BBC0DD","path":"rooms/Sala_principal/Sala_principal.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Tarja","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_D0BAC46","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_D0BAC46","objectId":{"name":"Obj_control_escuridao","path":"objects/Obj_control_escuridao/Obj_control_escuridao.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1029.0,"y":453.0,},
+        {"$GMRInstance":"v4","%Name":"inst_57BBC0DD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_57BBC0DD","objectId":{"name":"Obj_ponteiro_m","path":"objects/Obj_ponteiro_m/Obj_ponteiro_m.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1091.0,"y":470.0,},
       ],"layers":[],"name":"Tarja","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tile_sala_principal_1_1_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tile_sala_principal_1_1_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":55,"SerialiseWidth":239,"TileCompressedData":[
           -3346,-2147483648,79,90,91,92,91,92,91,91,92,93,94,91,92,93,94,91,92,93,94,91,92,91,92,91,92,91,92,91,
