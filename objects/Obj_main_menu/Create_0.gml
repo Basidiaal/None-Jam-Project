@@ -17,7 +17,7 @@ langs = ["Português", "English", "Español"];
 
 // Configuração da Rede Social (YouTube)
 social_sprite = Spr_instagram; // Substitua pelo seu sprite
-social_url = "https://www.instagram.com/stephanyy_ppz?igsh=MXV0c282M2tjdDdhNg==";
+social_url = "https://www.instagram.com/alpha_omega_entertainment_?igsh=MXV0c282M2tjdDdhNg==";
 
 
 

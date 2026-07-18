@@ -45,7 +45,7 @@ if (room == rm_main_menu) {
                 var bar_x = xx + 380; 
 
                 // 1. Fundo da barra (Sempre Branco)
-                draw_set_color(c_white);
+                draw_set_color(c_gray);
                 draw_rectangle(bar_x, yy - 8, bar_x + bar_w, yy + 8, false);
 
                 // 2. Preenchimento da barra (Vermelho se selecionado, Cinza se não)
@@ -55,7 +55,7 @@ if (room == rm_main_menu) {
                 
                 // 3. Porcentagem na frente da barra
                 // Mantemos branco para combinar com o tema, mas você pode mudar para cor_preenchimento se preferir
-                draw_set_color(c_white); 
+                draw_set_color(c_gray); 
                 draw_set_halign(fa_left);
                 draw_text(bar_x + bar_w + 15, yy, string(floor(vol * 100)) + "%");
             }

@@ -5,6 +5,15 @@ if (global.pause) {
 
 // 1. Checa proximidade e clique
 if (place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
+
+        // Se for a PRIMEIRA vez que o player interage no jogo inteiro:
+        if (Obj_player.ja_interagiu_antes == false) {
+            Obj_player.sprite_index = Spr_Player_interagindo1;
+            Obj_player.ja_interagiu_antes = true; // Salva no player que a primeira vez já foi
+        } else {
+            // Nas próximas vezes, usa a segunda animação:
+            Obj_player.sprite_index = Spr_Player_interagindo2;
+        }
  
     // 2. Só pega se a mão estiver vazia
     if (Obj_inventory.item_segurando == noone) {

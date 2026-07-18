@@ -8,7 +8,7 @@ tem_braco  = false;
 tem_perna  = false;
 
 movendo = false;
-x_alvo = x + 200; // Move para o lado
+x_alvo = x + 130; // Move para o lado
 velocidade = 1;
 
 

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_cofre_cassino",
-    "path":"sprites/Spr_cofre_cassino/Spr_cofre_cassino.yy",
+    "name":"Spr_saida",
+    "path":"sprites/Spr_saida/Spr_saida.yy",
   },
   "spriteMaskId":null,
   "visible":true,
