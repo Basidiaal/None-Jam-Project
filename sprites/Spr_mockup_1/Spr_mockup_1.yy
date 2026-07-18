@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Spr_mockup_1",
   "bboxMode":0,
   "bbox_bottom":419,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"bdfc0dd6-375a-4f0c-8512-7f65095522b4","name":"bdfc0dd6-375a-4f0c-8512-7f65095522b4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"7487b98c-c173-4b73-b1e9-bda3fa26a7f1","name":"7487b98c-c173-4b73-b1e9-bda3fa26a7f1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bdfc0dd6-375a-4f0c-8512-7f65095522b4","name":"bdfc0dd6-375a-4f0c-8512-7f65095522b4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7487b98c-c173-4b73-b1e9-bda3fa26a7f1","name":"7487b98c-c173-4b73-b1e9-bda3fa26a7f1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -33,7 +33,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Spr_mockup",
     "autoRecord":true,
     "backdropHeight":768,

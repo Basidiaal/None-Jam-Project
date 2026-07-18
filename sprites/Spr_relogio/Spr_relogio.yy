@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Spr_relogio",
   "bboxMode":0,
   "bbox_bottom":109,
@@ -12,10 +12,10 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b4e06ee5-2064-42e0-9619-f20b6deff524","name":"b4e06ee5-2064-42e0-9619-f20b6deff524","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"701c239c-7e6a-4b77-898f-af34357ee5a9","name":"701c239c-7e6a-4b77-898f-af34357ee5a9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"43ac021b-48ef-43dd-abd5-560ba9b70ec0","name":"43ac021b-48ef-43dd-abd5-560ba9b70ec0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"47c7e13f-2a10-47a5-91fd-43c629c0087a","name":"47c7e13f-2a10-47a5-91fd-43c629c0087a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b4e06ee5-2064-42e0-9619-f20b6deff524","name":"b4e06ee5-2064-42e0-9619-f20b6deff524","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"701c239c-7e6a-4b77-898f-af34357ee5a9","name":"701c239c-7e6a-4b77-898f-af34357ee5a9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"43ac021b-48ef-43dd-abd5-560ba9b70ec0","name":"43ac021b-48ef-43dd-abd5-560ba9b70ec0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"47c7e13f-2a10-47a5-91fd-43c629c0087a","name":"47c7e13f-2a10-47a5-91fd-43c629c0087a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -35,7 +35,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Spr_relogio",
     "autoRecord":true,
     "backdropHeight":768,

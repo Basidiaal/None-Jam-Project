@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Spr_cofre_cassino",
   "bboxMode":0,
   "bbox_bottom":96,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7b0d8fbe-c5f4-46b9-9c40-09e2d3cdddd6","name":"7b0d8fbe-c5f4-46b9-9c40-09e2d3cdddd6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"79dfbdef-5a23-47b6-b5b2-6bfec0906d44","name":"79dfbdef-5a23-47b6-b5b2-6bfec0906d44","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7b0d8fbe-c5f4-46b9-9c40-09e2d3cdddd6","name":"7b0d8fbe-c5f4-46b9-9c40-09e2d3cdddd6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"79dfbdef-5a23-47b6-b5b2-6bfec0906d44","name":"79dfbdef-5a23-47b6-b5b2-6bfec0906d44","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -33,7 +33,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Spr_cofre_cassino",
     "autoRecord":true,
     "backdropHeight":768,

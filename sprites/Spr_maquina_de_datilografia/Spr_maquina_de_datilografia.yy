@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Spr_maquina_de_datilografia",
   "bboxMode":0,
   "bbox_bottom":40,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b8a3fc5f-c137-4a3b-a5a8-2bf0f09b3f70","name":"b8a3fc5f-c137-4a3b-a5a8-2bf0f09b3f70","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"911e6b44-9a11-447d-9bdb-09517a66b469","name":"911e6b44-9a11-447d-9bdb-09517a66b469","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b8a3fc5f-c137-4a3b-a5a8-2bf0f09b3f70","name":"b8a3fc5f-c137-4a3b-a5a8-2bf0f09b3f70","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"911e6b44-9a11-447d-9bdb-09517a66b469","name":"911e6b44-9a11-447d-9bdb-09517a66b469","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -33,7 +33,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Spr_maquina_de_datilografia",
     "autoRecord":true,
     "backdropHeight":768,

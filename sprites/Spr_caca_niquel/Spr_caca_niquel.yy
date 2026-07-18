@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Spr_caca_niquel",
   "bboxMode":0,
   "bbox_bottom":393,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2365eb78-5082-4839-a417-2036f2441ad3","name":"2365eb78-5082-4839-a417-2036f2441ad3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2365eb78-5082-4839-a417-2036f2441ad3","name":"2365eb78-5082-4839-a417-2036f2441ad3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -51,7 +51,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Spr_caca_niquel",
     "autoRecord":true,
     "backdropHeight":768,

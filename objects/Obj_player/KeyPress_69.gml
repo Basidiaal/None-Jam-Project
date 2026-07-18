@@ -1,3 +1,12 @@
+// Antes de checar as portas, criamos e verificamos se um item foi coletado neste frame
+if (!variable_global_exists("item_coletado_neste_frame")) {
+    global.item_coletado_neste_frame = false;
+}
+if (global.item_coletado_neste_frame) {
+    global.item_coletado_neste_frame = false; 
+    exit; 
+}
+
 // =========================================================================
 // OBJ_PORTA (Com animação e centralização)
 // =========================================================================
@@ -66,16 +75,6 @@ if (_instancia_porta != noone) {
             _f.target_room = Sala_2;
         }
     }
-}
-
-// Antes de checar as próximas portas, criamos a variável global se ela não existir
-if (!variable_global_exists("item_coletado_neste_frame")) {
-    global.item_coletado_neste_frame = false;
-}
-
-if (global.item_coletado_neste_frame) {
-    global.item_coletado_neste_frame = false; 
-    exit; 
 }
 
 // =========================================================================

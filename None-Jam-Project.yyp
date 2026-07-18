@@ -1,10 +1,10 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"None-Jam-Project",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
-    {"$GMAudioGroup":"","%Name":"audiogroup_music","name":"audiogroup_music","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
-    {"$GMAudioGroup":"","%Name":"audiogroup_sound_effects","name":"audiogroup_sound_effects","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_music","exportDir":"","name":"audiogroup_music","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_sound_effects","exportDir":"","name":"audiogroup_sound_effects","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -74,13 +74,14 @@
     {"$GMFolder":"","%Name":"Sala2","folderPath":"folders/Sprites/Sala2.yy","name":"Sala2","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sotao","folderPath":"folders/Sprites/Sotao.yy","name":"Sotao","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"foto_sala.png","CopyToMask":-1,"filePath":"datafiles","name":"foto_sala.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"None-Jam-Project",
   "resources":[
@@ -237,10 +238,13 @@
     {"id":{"name":"Snd_Passos_Escada","path":"sounds/Snd_Passos_Escada/Snd_Passos_Escada.yy",},},
     {"id":{"name":"Snd_pintura_subindo","path":"sounds/Snd_pintura_subindo/Snd_pintura_subindo.yy",},},
     {"id":{"name":"Snd_rewind","path":"sounds/Snd_rewind/Snd_rewind.yy",},},
+<<<<<<< HEAD
     {"id":{"name":"som_geral","path":"sounds/som_geral/som_geral.yy",},},
     {"id":{"name":"Sons","path":"sounds/Sons/Sons.yy",},},
     {"id":{"name":"Spr__1","path":"sprites/Spr__1/Spr__1.yy",},},
     {"id":{"name":"Spr_","path":"sprites/Spr_/Spr_.yy",},},
+=======
+>>>>>>> 90e88db7b5e0187a15b0fb03942d83657e0bb809
     {"id":{"name":"Spr_abajur","path":"sprites/Spr_abajur/Spr_abajur.yy",},},
     {"id":{"name":"Spr_banquinho","path":"sprites/Spr_banquinho/Spr_banquinho.yy",},},
     {"id":{"name":"Spr_barreira_parte_superior","path":"sprites/Spr_barreira_parte_superior/Spr_barreira_parte_superior.yy",},},
@@ -316,6 +320,7 @@
     {"id":{"name":"Spr_Player_interagindo3_1","path":"sprites/Spr_Player_interagindo3_1/Spr_Player_interagindo3_1.yy",},},
     {"id":{"name":"Spr_Player_interagindo3","path":"sprites/Spr_Player_interagindo3/Spr_Player_interagindo3.yy",},},
     {"id":{"name":"Spr_Player_mask","path":"sprites/Spr_Player_mask/Spr_Player_mask.yy",},},
+    {"id":{"name":"Spr_Player_pegar_chao","path":"sprites/Spr_Player_pegar_chao/Spr_Player_pegar_chao.yy",},},
     {"id":{"name":"Spr_Player_walking","path":"sprites/Spr_Player_walking/Spr_Player_walking.yy",},},
     {"id":{"name":"Spr_poltrona","path":"sprites/Spr_poltrona/Spr_poltrona.yy",},},
     {"id":{"name":"Spr_ponteiro_h","path":"sprites/Spr_ponteiro_h/Spr_ponteiro_h.yy",},},
@@ -346,14 +351,21 @@
     {"id":{"name":"Spr_tela_sala_principal","path":"sprites/Spr_tela_sala_principal/Spr_tela_sala_principal.yy",},},
     {"id":{"name":"Spr_tela","path":"sprites/Spr_tela/Spr_tela.yy",},},
     {"id":{"name":"Spr_terminal","path":"sprites/Spr_terminal/Spr_terminal.yy",},},
+    {"id":{"name":"Spr_tiktok","path":"sprites/Spr_tiktok/Spr_tiktok.yy",},},
     {"id":{"name":"Spr_tres_banquinhos","path":"sprites/Spr_tres_banquinhos/Spr_tres_banquinhos.yy",},},
     {"id":{"name":"Spr_vaso","path":"sprites/Spr_vaso/Spr_vaso.yy",},},
     {"id":{"name":"Spr_venda_no_pedestal","path":"sprites/Spr_venda_no_pedestal/Spr_venda_no_pedestal.yy",},},
+    {"id":{"name":"Spr_x","path":"sprites/Spr_x/Spr_x.yy",},},
+    {"id":{"name":"Spr_youtube","path":"sprites/Spr_youtube/Spr_youtube.yy",},},
     {"id":{"name":"Sprite103_1","path":"sprites/Sprite103_1/Sprite103_1.yy",},},
     {"id":{"name":"Sprite103","path":"sprites/Sprite103/Sprite103.yy",},},
     {"id":{"name":"Sprite106","path":"sprites/Sprite106/Sprite106.yy",},},
     {"id":{"name":"Sprite112","path":"sprites/Sprite112/Sprite112.yy",},},
+<<<<<<< HEAD
     {"id":{"name":"Sprite117","path":"sprites/Sprite117/Sprite117.yy",},},
+=======
+    {"id":{"name":"Sprite120","path":"sprites/Sprite120/Sprite120.yy",},},
+>>>>>>> 90e88db7b5e0187a15b0fb03942d83657e0bb809
     {"id":{"name":"Sprite54","path":"sprites/Sprite54/Sprite54.yy",},},
     {"id":{"name":"Sprite95","path":"sprites/Sprite95/Sprite95.yy",},},
     {"id":{"name":"Sprite96","path":"sprites/Sprite96/Sprite96.yy",},},

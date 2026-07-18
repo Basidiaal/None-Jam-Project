@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Spr_caixa_de_fuzivel",
   "bboxMode":0,
   "bbox_bottom":44,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8425e9a5-f13a-486d-b8f0-d566db84f2d0","name":"8425e9a5-f13a-486d-b8f0-d566db84f2d0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"78015254-7657-4d4d-9c9a-2a7c745f767a","name":"78015254-7657-4d4d-9c9a-2a7c745f767a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8425e9a5-f13a-486d-b8f0-d566db84f2d0","name":"8425e9a5-f13a-486d-b8f0-d566db84f2d0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"78015254-7657-4d4d-9c9a-2a7c745f767a","name":"78015254-7657-4d4d-9c9a-2a7c745f767a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -33,7 +33,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Spr_caixa_de_fuzivel",
     "autoRecord":true,
     "backdropHeight":768,

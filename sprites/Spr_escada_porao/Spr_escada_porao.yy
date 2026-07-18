@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Spr_escada_porao",
   "bboxMode":0,
   "bbox_bottom":361,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"59fb84cb-99d3-47da-b8d4-7d5a76c369c7","name":"59fb84cb-99d3-47da-b8d4-7d5a76c369c7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"59fb84cb-99d3-47da-b8d4-7d5a76c369c7","name":"59fb84cb-99d3-47da-b8d4-7d5a76c369c7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -32,7 +32,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Spr_escada_porao",
     "autoRecord":true,
     "backdropHeight":768,

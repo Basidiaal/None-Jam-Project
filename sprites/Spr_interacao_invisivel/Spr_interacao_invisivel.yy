@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Spr_interacao_invisivel",
   "bboxMode":0,
   "bbox_bottom":0,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"209ffd20-c9c7-4034-84de-9ad7ac3c3a5a","name":"209ffd20-c9c7-4034-84de-9ad7ac3c3a5a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"209ffd20-c9c7-4034-84de-9ad7ac3c3a5a","name":"209ffd20-c9c7-4034-84de-9ad7ac3c3a5a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -32,7 +32,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Spr_interacao_invisivel",
     "autoRecord":true,
     "backdropHeight":768,

@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"Snd_encaixe_pedra",
   "audioGroupId":{
     "name":"audiogroup_sound_effects",
     "path":"audiogroups/audiogroup_sound_effects",
   },
   "bitDepth":1,
-  "bitRate":128,
+  "channelFormat":0,
   "compression":0,
+  "compressionQuality":4,
   "conversionMode":0,
   "duration":0.528,
+  "exportDir":"",
   "name":"Snd_encaixe_pedra",
   "parent":{
     "name":"Sons",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"Snd_encaixe_pedra.mp3",
-  "type":0,
   "volume":1.0,
 }

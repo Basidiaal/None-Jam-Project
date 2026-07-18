@@ -11,7 +11,8 @@ var _velh = sign(velh);
 var _velv = sign(velv);
 
 
-//horizontal
+// horizontal
+depth = -y;
 repeat(abs(velh))
 {
 	

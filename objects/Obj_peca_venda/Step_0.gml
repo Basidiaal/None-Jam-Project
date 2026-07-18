@@ -1,8 +1,9 @@
-event_inherited();
-if (global.pause) {
+// Bloqueia a coleta enquanto o puzzle não estiver resolvido
+if (!global.puzzle_resolvido) {
     exit;
-} 
+}
 
+<<<<<<< HEAD
 // 1. Checa proximidade, clique E se o puzzle já foi resolvido
 if (place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
     
@@ -31,3 +32,7 @@ if (place_meeting(x, y, Obj_player) && keyboard_check_pressed(ord("E"))) {
         }
     } 
 //}
+=======
+// Delega toda a lógica de coleta, animação e inventário ao pai
+event_inherited();
+>>>>>>> 90e88db7b5e0187a15b0fb03942d83657e0bb809

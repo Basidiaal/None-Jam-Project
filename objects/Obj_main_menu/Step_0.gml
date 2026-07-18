@@ -1,5 +1,23 @@
 if (room != rm_main_menu) exit; // Se não for a sala do menu, ignora o resto do código
 
+// Controle de Créditos Rolantes
+if (menu_state == "credits") {
+    credits_scroll_y -= 1.5;
+    
+    // Volta se passar muito da tela
+    if (credits_scroll_y < -1200) {
+        menu_state = "main";
+        index = 3;
+    }
+    
+    // Volta ao pressionar ESC ou botão do mouse
+    if (keyboard_check_pressed(vk_escape) || mouse_check_button_pressed(mb_any)) {
+        menu_state = "main";
+        index = 3;
+    }
+    exit;
+}
+
 // 1. Identificar qual menu estamos olhando
 var options = options_main;
 if (menu_state == "settings") options = options_settings;
@@ -53,7 +71,12 @@ if (keyboard_check_pressed(vk_enter)) {
         switch(index) {
             case 0: room_goto(Sala_principal); break;
             case 2: menu_state = "settings"; index = 0; break;
-            case 3: menu_state = "credits"; index = 0; break;
+            case 3: 
+                menu_state = "credits"; 
+                index = 0; 
+                credits_scroll_y = display_get_gui_height();
+                keyboard_clear(vk_enter);
+                break;
             case 4: game_end(); break;
         }
     } else if (menu_state == "settings" && index == 5) {
@@ -63,14 +86,23 @@ if (keyboard_check_pressed(vk_enter)) {
     }
 }
 
-// 5. Clique no Ícone de Rede Social
+// 5. Clique nos Ícones de Redes Sociais
 if (mouse_check_button_pressed(mb_left)) {
     var mx = device_mouse_x_to_gui(0);
     var my = device_mouse_y_to_gui(0);
-    var social_x = display_get_gui_width() - 80;
-    var social_y = display_get_gui_height() - 80;
     
-    if (point_in_circle(mx, my, social_x, social_y, 32)) {
-        url_open(social_url);
+    var gui_w = display_get_gui_width();
+    var gui_h = display_get_gui_height();
+    var start_x = gui_w - 60 - (array_length(social_networks) - 1) * 65;
+    var social_y = gui_h - 60;
+    
+    for (var s = 0; s < array_length(social_networks); s++) {
+        var net = social_networks[s];
+        var icon_x = start_x + (s * 65);
+        
+        if (point_in_circle(mx, my, icon_x, social_y, 25)) {
+            url_open(net.url);
+            break;
+        }
     }
 }

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Spr_placa_de_pressao_pressionada",
   "bboxMode":0,
   "bbox_bottom":31,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"30b8e92f-441b-4b8d-8e4f-56e9e2c8e579","name":"30b8e92f-441b-4b8d-8e4f-56e9e2c8e579","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"30b8e92f-441b-4b8d-8e4f-56e9e2c8e579","name":"30b8e92f-441b-4b8d-8e4f-56e9e2c8e579","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -32,7 +32,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Spr_placa_de_pressao_pressionada",
     "autoRecord":true,
     "backdropHeight":768,

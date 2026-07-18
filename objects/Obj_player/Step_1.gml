@@ -10,7 +10,11 @@ var tamanho_customizado_y = 1.5;
 if(velh != 0) xscale = sign(velh);
 
 // Aplica o lado multiplicando pelo tamanho desejado
-image_xscale = xscale * tamanho_customizado;
+if (sprite_index == Spr_Player_pegar_chao) {
+    image_xscale = -xscale * tamanho_customizado; // Inverte o lado no sprite de abaixar
+} else {
+    image_xscale = xscale * tamanho_customizado;
+}
 //para a proporção y
 image_yscale = tamanho_customizado_y;
 
